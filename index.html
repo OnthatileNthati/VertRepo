@@ -11,16 +11,198 @@
 </head>
 <body>
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
+        <div class="container">
             <a href="index.html" class="logo">Vert<span>Repo</span></a>
-            <div class="nav-links">
-                <a href="#categories">Browse</a>
-                <a href="#how-it-works">How it works</a>
+            <a href="claim.html" class="btn-nav">List Your Business</a>
+        </div>
+        </nav>
+    
+<section class="hero" id="hero">
+    <div class="hero-container">
+        <div class="hero-badge">📍Pretoria East</div>
+        <h1 class="hero-headline">
+            Discover the <span class="accent">hidden gems</span> in your neighborhood
+        </h1>
+        
+        <p class="hero-sub">
+            Local businesses Google never shows you. Real places, real people, right around the corner.
+        </p>
+
+        <div class="search-bar">
+            <div class="search-input-wrap">
+                <input type="text" id="searchInput" placeholder="Search businesses, services..."/>
+            </div>
+            <select id="categoryFilter" class="category-select">
+                <option value="">All categories</option>
+                <option value="restaurants">🍽️Restaurants</option>
+                <option value="carwashes">🚗Car Washes</option>
+                <option value="Beauty">💄Beauty</option>
+                <option value="auto">🔧Auto</option>
+                <option value="services">💼Services</option>
+            </select>
+            <button class="btn-search" id="searchBTN">Search</button>
+            </div>
+
+            </div>
+            </section>
                 
+<section class="categories" id="categories">
+    <div class="section-container">
+        <div class="section-label">Browse by category</div>
+        <h2 class="section-title">What are you looking for?</h2>
+        <div class="categories-grid">
 
+            <a href="search.html?cat=restaurants" class="categoriy-card">
+                <div class="cat-icon">🍽️</div>
+                <div class="cat-name">Restaurants</div>
+                <div class="cat-count">0 Listings</div>
+            </a>
 
+            <a href="search.html?cat=carwashes" class="categoriy-card">
+                <div class="cat-icon">🚗</div>
+                <div class="cat-name">Car Washes</div>
+                <div class="cat-count">0 Listings</div>
+            </a>
 
+            <a href="search.html?cat=beauty" class="categoriy-card">
+                <div class="cat-icon">💄</div>
+                <div class="cat-name">Beauty</div>
+                <div class="cat-count">0 Listings</div>
+            </a>
 
+            <a href="search.html?cat=auto" class="categoriy-card">
+                <div class="cat-icon">🔧</div>
+                <div class="cat-name">Automotive</div>
+                <div class="cat-count">0 Listings</div>
+            </a>
 
+            <a href="search.html?cat=services" class="categoriy-card">
+                <div class="cat-icon">💼</div>
+                <div class="cat-name">Services</div>
+                <div class="cat-count">0 Listings</div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="featured" id="featured">
+    <div class="section-container">
+        <div class="section-label">Top Picks</div>
+        <h2 class="section-title">Featured Businesses</h2>
+        <p class="section-sub">Highly rated locals that deserve more love.</p>
+        <div class="listings-grid" id="listingGrid">
+
+            <a href="listing.html" class="listing-card featured-card">
+                <div class="card-badge">⭐Featured</div>
+                <div class="card-img-placeholder">🍽️</div>
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="card-category">Restaurant</div>
+                        <h3 class="card-name">Coming Soon</h3>
+                        <div class="card-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <p class="card-desc"> Be the first business in this spot.</p>
+                            <div class="card-footer">
+                                <span class="card-location">📍Pretoria East</span>
+                                <span class="card-cta">View</span>
+                                </div>
+                                </div>
+                            </a>
+
+<a href="listing.html" class="listing-card featured-card">
+    <div class="card-badge">⭐Featured</div>
+            <div class="card-img-placeholder">🚗</div>
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="card-category">Car Wash</div>
+                        <h3 class="card-name">Coming Soon</h3>
+                        <div class="card-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <p class="card-desc"> Be the first business in this spot.</p>
+                            <div class="card-footer">
+                                <span class="card-location">📍Pretoria East</span>
+                                <span class="card-cta">View</span>
+                                </div>
+                                </div>
+                            </a>
+
+ <a href="listing.html" class="listing-card featured-card">
+    <div class="card-badge">⭐Featured</div>
+        <div class="card-img-placeholder">💄</div>
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="card-category">Beauty</div>
+                        <h3 class="card-name">Coming Soon</h3>
+                        <div class="card-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <p class="card-desc"> Be the first business in this spot.</p>
+                            <div class="card-footer">
+                                <span class="card-location">📍Pretoria East</span>
+                                <span class="card-cta">View</span>
+                                </div>
+                                </div>
+                            </a>
+
+<a href="listing.html" class="listing-card featured-card">
+        <div class="card-badge">⭐Featured</div>
+             <div class="card-img-placeholder">🔧</div>
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="card-category">Automotive</div>
+                        <h3 class="card-name">Coming Soon</h3>
+                        <div class="card-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <p class="card-desc"> Be the first business in this spot.</p>
+                            <div class="card-footer">
+                                <span class="card-location">📍Pretoria East</span>
+                                <span class="card-cta">View</span>
+                                </div>
+                                </div>
+                            </a>
+                            
+<a href="listing.html" class="listing-card featured-card">
+                <div class="card-badge">⭐Featured</div>
+                <div class="card-img-placeholder">💼</div>
+                <div class="card-body">
+                    <div class="card-body">
+                        <div class="card-category">Services</div>
+                        <h3 class="card-name">Coming Soon</h3>
+                        <div class="card-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <p class="card-desc"> Be the first business in this spot.</p>
+                            <div class="card-footer">
+                                <span class="card-location">📍Pretoria East</span>
+                                <span class="card-cta">View</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+</div>
+</section>
+                    
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">Vert<span>Repo</span></a>
+            <p>Connecting Pretoria East with the businesses that deserve to be found</p>
+        </div>
+        <div class="footer-links">
+            <a href="claim.html">List Your Business</a>
+            <a href="search.html">Browse All</a>
+            <a href="mailto:vertexrastudio@gmail.com">Contact</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VertRepo - A Vertexra Studio product</p>
+        </div>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
