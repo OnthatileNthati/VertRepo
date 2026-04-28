@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Business - VertRepo</title>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Vert<span>Repo</span></a>
+                <a href="claim.html" class="btn-nav">List Your Business</a>
+                </div>
+                </nav>
+
+                <section class="claim-hero">
+                    <div class="section-container">
+                        <div class="section-label">Free Listing</div>
+                        <h1 class="section-title">Get your business found</h1>
+                        <p class="section-sub">Join VertRepo and get discovered by customers in Pretoria East. First month free.</p>
+                        </div>
+                        </section>
+
+<section class="claim-form-section">
+    <div class="claim-container">
+
+        <div id="successMessage" style="display: none;" class="success-message">
+            <div class="success-icon">✅</div>
+            <h2>You're on the list!</h2>
+            <p>We'll review your submission and get your business live within 24hrs</p>
+            <a href="index.html" class="btn-nav">Back to home</a>
+        </div>
+
+        <form id="claimForm" action="https://formspree.io/f/xeevyjlj" method="POST">
+
+                    <div class="form-group">
+                        <label for="businessName">Business Name *</label>
+                        <input type="text" id="businessName" placeholder="e.g ShinePro Detailing"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="businessCategory">Category *</label>
+                            <select id="businessCategory">
+                                <option>Select a category</option>
+                                <option value="restaurants">🍽️Restaurants</option>
+                                <option value="carwashes">🚗Carwashes</option>
+                                <option value="beauty">💄Beauty</option>
+                                <option value="auto">🔧Auto</option>
+                                <option value="services">🛠️Services</option>
+                            </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="businessDesc">Description *</label>
+                                <textarea id="businessDesc" rows="4" placeholder="Tell customers what makes your business special..."></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="businessPhone">Phone Number *</label>
+                                    <input type="tel" id="businessPhone" placeholder="e.g. 012 345 6754"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label for="businessWhatsapp">WhatsApp Number *</label>
+                                    <input type="tel" id="businessPhone" placeholder="e.g. 27123456754"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label for="businessAddress">Address *</label>
+                                    <input type="tel" id="businessPhone" placeholder="e.g. 12 Main Street Garsfontein"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                    <label for="photoUpload">Business Photo *</label>
+                                    <input type="file" id="photoUpload" accept="image/*" >
+                                    <img id="photoPreveiw" style="display: none; margin-top: 12px; max-width: 100%; border-radius: 8px;">
+                                    </div>
+
+                                    <button type="submit" class="btn-submit">Submit Free Listing</button>
+                                    </form>
+                                    </section>
+<script src="claim.js"></Script>
+</body>
+</html>
+
+
+

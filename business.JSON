@@ -1,0 +1,66 @@
+[{
+    "id":1,
+    "name":"Coming Soon",
+    "category":"restaurants",
+    "rating":5.0,
+    "reviews":0,
+    "description":"Be the first restaurant listed here",
+    "services":["Dine in", "Takeaway", "Delivery"],
+    "location":"Pretoria East",
+    "address":"Pretoria East",
+    "whatsapp":"",
+    "featured":true
+},
+{
+    "id":2,
+    "name":"Coming Soon",
+    "category":"carwashes",
+    "rating":5.0,
+    "reviews":0,
+    "description":"Be the first carwash listed here",
+    "services":["Hand wash", "Full detail", "Interior clean"],
+    "location":"Pretoria East",
+    "address":"Pretoria East",
+    "whatsapp":"",
+    "featured":false
+},
+{
+    "id":3,
+    "name":"Coming Soon",
+    "category":"beauty",
+    "rating":5.0,
+    "reviews":0,
+    "description":"Be the first beauty business listed here",
+    "services":["Nails", "Facials", "Lashes"],
+    "location":"Pretoria East",
+    "address":"Pretoria East",
+    "whatsapp":"",
+    "featured":false
+},
+{   
+     "id":4,
+    "name":"Coming Soon",
+    "category":"auto",
+    "rating":5.0,
+    "reviews":0,
+    "description":"Be the first automotive business listed here",
+    "services":["Repairs", "Servicing", "Tyres"],
+    "location":"Pretoria East",
+    "address":"Pretoria East",
+    "whatsapp":"",
+    "featured":false
+},
+{
+    "id":5,
+    "name":"Coming Soon",
+    "category":"services",
+    "rating":5.0,
+    "reviews":0,
+    "description":"Be the first service business listed here",
+    "services":["Plumbing", "Electrical", "Cleaning"],
+    "location":"Pretoria East",
+    "address":"Pretoria East",
+    "whatsapp":"",
+    "featured":false
+}
+]

@@ -1,106 +1,41 @@
-//===BUSINESS DATA===
+//===FETCH BUSINESS DATA
+async function  init() {
+    const response = await fetch('business.json');
+    const businesses = await response.json();
 
-const businesses = [
-{
-    id: 1,
-    name: "Coming Soon",
-    category: "restaurants",
-    rating: 5.0,
-    reviews: 0,
-    description: "Be the first restaurant listed here.",
-    location: "Pretoria East",
-    whatsapp:"",
-    featured: true,
-    complete: true,
-}
+    //===GET URL PARAMS==
+    const params = new URLSearchParams(window.location.search);
+    const queryParam = params.get('q') || ''; 
+    const catParam = params.get('cat') || ''; 
 
-{
-    id: 2,
-    name: "Coming Soon",
-    category: "carwashes",
-    rating: 5.0,
-    reviews: 0,
-    description: "Be the first carwash listed here.",
-    location: "Pretoria East",
-    whatsapp:"",
-    featured: false,
-    complete: true,
-},
+    document.getElementById('searchInput').value = queryParam;
+    document.getElementById('categoryFilter').value = catParam;
 
-{
-    id: 3,
-    name: "Coming Soon",
-    category: "beauty",
-    rating: 5.0,
-    reviews: 0,
-    description: "Be the first beauty business listed here.",
-    location: "Pretoria East",
-    whatsapp:"",
-    featured: false,
-    complete: true,
-},
+    //==SORT==
+    function sortBusinesses(list){
+        return list.sort((a,b) => {
+            if (a.featured !== b.featured) return b.featured - a.featured;
+            if (b.rating !== a.rating) return b.rating - a.rating; 
+            return b.reviews - a.reviews;
+        });
+    }
 
-{
-    id: 4,
-    name: "Coming Soon",
-    category: "auto",
-    rating: 5.0,
-    reviews: 0,
-    description: "Be the first automotive business listed here.",
-    location: "Pretoria East",
-    whatsapp:"",
-    featured: false,
-    complete: true,
-
-},
-
-{
-    id: 5,
-    name: "Coming Soon",
-    category: "services",
-    rating: 5.0,
-    reviews: 0,
-    description: "Be the first services business listed here.",
-    location: "Pretoria East",
-    whatsapp:"",
-    featured: true,
-    complete: true,
-
-}
-];
-
-// ===ALGORITHM _ SORT BUSINESSES===
-
-function sortBusinesses(list) {
-    return list.sort((a, b) => {
-        if (a.featured !== b.featured) return b.featured - a.featured;
-        if (b.rating !== a.rating) return b.rating - a.rating;
-        return b.reviews - a.reviews;
-    });
-}
-
-//===GET URL PARAMS===
-
-const params = new URLSearchParams(window.location.search);
-const queryParam = params.get('q') || '';
-const catParam = params.get('cat') || '';
-
-//===FILTER BUSINESSES===
-
-function filterBusinesses(){
+//==FILTER==
+function filterAndRender(){
     const searchItem = document.getElementById('searchInput').value.toLowerCase();
     const category = document.getElementById('categoryFilter').value;
 
     let results = businesses.filter(b => {
-        const matchesQuery = b.name.toLowerCase().includes(searchTerm) || b.description.toLowerCase().includes(searchTerm);
-        const matchesCat = category === '' || b.category === category;
-        return matchesQuery && matchesCat;
+        const matchesQuery = b.name.toLowerCase().includes(searchItem) ||
+                             b.description.toLowerCase().includes(searchTerm);
+        const matchesCat = category ==='' || b.category === category; 
+        return matchesQuery && matchesCat;        
     });
-return sortBusinesses(results);
+    renderCards(sortBusinesses(results));
+}
 }
 
-//RENDER CARDS===
-
+//===RENDER CARDS===
 function renderCards(list) {
     const grid = document.getElementById('resultsGrid');
 
@@ -123,7 +58,7 @@ grid.innerHTML = list.map(b => `
        b.category === 'carwashes'? '🚗' : 
        b.category === 'beauty' ? '💄' :
        b.category === 'auto' ? '🔧' :
-       b.category === 'services' ? '🛠️' : '🏢'}
+       b.category === 'services' ? '🔧' : '🛠️'}
     </div>
 <div class="card-body">
  <div class="card-category">${b.category}</div>
@@ -140,20 +75,13 @@ grid.innerHTML = list.map(b => `
 </div>
 </a>
 `).join('');
-}
 
-//===INITIALIZE PAGE===
 
-window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('searchInput').value = queryParam;
-    document.getElementById('categoryFilter').value = catParam;
-    renderCards(filterBusinesses());
+//===LISTENERS===
+document.getElementById('searchInput').addEventListener('input', filterAndRender);
+document.getElementById('categoryFilter').addEventListener('change', filterAndRender);
 
-    document.getElementById('searchInput').addEventListener('input', () => {
-        renderCards(filterBusinesses());
-    });
+filterAndRender();
+ }
 
-    document.getElementById('categoryFilter').addEventListener('change', () => {
-        renderCards(filterBusinesses());
-    });
-});
+ window.addEventListener('DOMContentLoaded', init)

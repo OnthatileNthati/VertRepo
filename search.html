@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - VertRepo</title>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Vert<span>Repo</span></a>
+                <a href="claim.html" class="btn-nav">List Your Business</a>
+                </div>
+                </nav>
+
+                
+<section class="search-page-hero">
+    <div class="section-container">
+        <div class="search-bar">
+            <div class="search-input-wrap">
+                <input type="text" id="searchInput" placeholder="Search businesses, services..."/>
+            </div>
+            <select id="categoryFilter" class="category-select">
+                                <option>All Categories</option>
+                                <option value="restaurants">🍽️Restaurants</option>
+                                <option value="carwashes">🚗Carwashes</option>
+                                <option value="beauty">💄Beauty</option>
+                                <option value="auto">🔧Auto</option>
+                                <option value="services">🛠️Services</option>
+                            </select>
+                     </div>
+                </div>
+</section>
+
+
+
+<section class="search-results">
+    <div class="section-container">
+        <div class="section-label" id="resultsLabel">All businesses</div>
+        <div class="listings-grid" id="resultsGrid">
+            <div class="loading">Loading businesses...</div>
+        </div>
+    </div>
+ </section>
+
+ <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">Vert<span>Repo</span></a>
+            <p>Connecting Pretoria East wuth the businessses that deserve to be found.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="claim.html">List Your Business</a>
+            <a href="search.html">Browse All</a>
+            <a href="mailto:vertexrastudio@gmail.com">Contact</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 VertRepo - A Vertexra Studio product</p>
+            </div>
+            </div>
+            </footer>
+            
+            <script src="search.js"></script>
+            </body>
+            </html>
