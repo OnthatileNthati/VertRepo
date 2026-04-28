@@ -2,6 +2,7 @@
 async function  init() {
     const response = await fetch('./businesses.json');
     const businesses = await response.json();
+    console.log(businesses);
 
     //===GET URL PARAMS==
     const params = new URLSearchParams(window.location.search);
@@ -84,4 +85,4 @@ document.getElementById('categoryFilter').addEventListener('change', filterAndRe
 filterAndRender();
  }
 
- window.addEventListener('DOMContentLoaded', init)
+ window.addEventListener('DOMContentLoaded', init);
