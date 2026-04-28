@@ -140,7 +140,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 //===FETCH BUSINESS DATA===
 async function init() {
-    const response = await fetch ('./business.json');
+    onse = await fetch ('./businesses.json');
     const businesses = await response.json();
 
     //==GET ID AND URL==
