@@ -42,7 +42,6 @@ searchInput.addEventListener('keydown', (e) => {
 });
 });
 
-// ===== DYNAMIC CATEGORY COUNTS =====
 async function updateCategoryCounts() {
   const response = await fetch('/businesses.json');
   const businesses = await response.json();
@@ -55,19 +54,20 @@ async function updateCategoryCounts() {
     services: 0
   };
 
-  businesses.forEach(b => {
+  businesses.forEach(function(b) {
     if (counts[b.category] !== undefined) {
       counts[b.category]++;
     }
   });
 
-  const catCards = document.querySelectorAll('.category-card');
-  catCards.forEach(card => {
+  console.log(counts);
+
+  document.querySelectorAll('.category-card').forEach(function(card) {
     const href = card.getAttribute('href');
-    const cat = new URL(href, window.location.href).searchParams.get('cat');
+    const cat = href.split('cat=')[1];
     const countEl = card.querySelector('.cat-count');
-    if (countEl && counts[cat] !== undefined) {
-      countEl.textContent = `${counts[cat]} listing${counts[cat] !== 1 ? 's' : ''}`;
+    if (countEl && cat && counts[cat] !== undefined) {
+      countEl.textContent = counts[cat] + (counts[cat] !== 1 ? ' listings' : ' listing');
     }
   });
 }
