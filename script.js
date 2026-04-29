@@ -30,6 +30,55 @@ searchBTN.addEventListener('click', () => {
     if(category) params.set('cat', category);
 
     window.location.href = `search.html?${params.toString()}`;
+
+    // ===== DYNAMIC FEATURED LISTINGS =====
+async function loadFeaturedListings() {
+  const response = await fetch('/businesses.json');
+  const businesses = await response.json();
+
+  const featured = businesses.filter(function(b) {
+    return b.featured === true;
+  });
+
+  const grid = document.getElementById('listingsGrid');
+  if (!grid) return;
+
+  if (featured.length === 0) {
+    grid.innerHTML = '<p class="section-sub">No featured businesses yet.</p>';
+    return;
+  }
+
+  grid.innerHTML = featured.map(function(b) {
+    return `
+      <a href="listing.html?id=${b.id}" class="listing-card featured-card">
+        <div class="card-badge">⭐ Featured</div>
+        <div class="card-img-placeholder">
+          ${b.category === 'restaurants' ? '🍽️' :
+            b.category === 'carwashes' ? '🚗' :
+            b.category === 'beauty' ? '💅' :
+            b.category === 'auto' ? '🔧' : '🛠️'}
+        </div>
+        <div class="card-body">
+          <div class="card-category">${b.category}</div>
+          <h3 class="card-name">${b.name}</h3>
+          <div class="card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">${b.rating}</span>
+            <span class="review-count">(${b.reviews} reviews)</span>
+          </div>
+          <p class="card-desc">${b.description}</p>
+          <div class="card-footer">
+            <span class="card-location">📍 ${b.location}</span>
+            <span class="card-cta">View →</span>
+          </div>
+        </div>
+      </a>
+    `;
+  }).join('');
+}
+
+loadFeaturedListings();
+
 });
 
 
@@ -60,7 +109,6 @@ async function updateCategoryCounts() {
     }
   });
 
-  console.log(counts);
 
   document.querySelectorAll('.category-card').forEach(function(card) {
     const href = card.getAttribute('href');
