@@ -336,11 +336,18 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
+    flex-wrap: nowrap;
 }
 
 .card-location{
     font-size: 0.82rem;
     color: var(--text-light);
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card-cta{
