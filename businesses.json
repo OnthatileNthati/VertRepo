@@ -62,5 +62,22 @@
     "address":"Pretoria East",
     "whatsapp":"",
     "featured":false
+}, 
+
+{
+   "id":6,
+    "name":"ShinePro Detailing",
+    "category":"carwashes",
+    "rating":4.9,
+    "reviews":45,
+    "description":"Premium hand wash and full detail in Moreleta Park",
+    "services":["Hand wash", "Full detail", "Interior clean"],
+    "location":"Moreleta Park",
+    "address":"67 Main Road, Moreleta Park",
+    "whatsapp":"2781857336",
+    "featured":false
 }
+
+
+
 ]
