@@ -44,7 +44,7 @@ searchInput.addEventListener('keydown', (e) => {
 
 // ===== DYNAMIC CATEGORY COUNTS =====
 async function updateCategoryCounts() {
-  const response = await fetch('./businesses.json');
+  const response = await fetch('/businesses.json');
   const businesses = await response.json();
 
   const counts = {
