@@ -71,147 +71,75 @@ const businesses = [
 }
 ];
 
-//===GET ID FROM URL===
+async function init() {
+  const response = await fetch('./businesses.json');
+  const businesses = await response.json();
 
-const params = new URLSearchParams(window.location.search);
-const businessId = parseInt(params.get('id'));
+  //==GET ID FROM URL==
+  const params = new URLSearchParams(window.location.search);
+  const businessId = parseInt(params.get('id'));
 
-//===FIND BUSINESS ===
+  //==FIND BUSINESS==
+  const business = businesses.find(b => b.id === businessId);
 
-const business = businesses.find(b => b.id === businessId);
-
-//===RENDER===
-window.addEventListener('DOMContentLoaded', () => {
-    if (!business) {
-        document.getElementById('listingContent').innerHTML = `
-        <div class="empty-state">
-        <p> Business not found.</p>
-        <a href="index.html" class="btn">Go Back Home</a>
-        </div>
-        `;
-        return;
-    }   
-
-    document.title = `${business.name} - VertRepo`;
+  //==RENDER==
+  if (!business) {
     document.getElementById('listingContent').innerHTML = `
+      <div class="empty-state">
+        <p>Business not found.</p>
+        <a href="index.html">← Back to home</a>
+      </div>
+    `;
+    return;
+  }
+
+  document.title = `${business.name} — VertRepo`;
+
+  document.getElementById('listingContent').innerHTML = `
     <div class="listing-cover">
-    <div class="listing-cover-placeholder">
-    ${business.category === 'Restaurants' ? '🍽️' :
-        business.category === 'CarWash' ? '🚗' :
-        business.category === 'Beauty' ? '💄' :
-        business.category === 'Automotive' ? '🔧' :
-        business.category === 'Services' ? '💼' : '🏢'}
-        </div>
-        </div>
-        <div class='listing-detail-container'>
-        <div class='listing-header'>
+      <div class="listing-cover-placeholder">
+        ${business.category === 'restaurants' ? '🍽️' :
+          business.category === 'carwashes' ? '🚗' :
+          business.category === 'beauty' ? '💅' :
+          business.category === 'auto' ? '🔧' : '🛠️'}
+      </div>
+    </div>
+    <div class="listing-detail-container">
+      <div class="listing-header">
         ${business.featured ? '<div class="card-badge">⭐ Featured</div>' : ''}
         <div class="card-category">${business.category}</div>
         <h1 class="listing-name">${business.name}</h1>
         <div class="card-rating">
-        <span class="stars">⭐⭐⭐⭐⭐</span>
-        <span class="review-count">(${business.rating}.${business.reviews} reviews)</span>
+          <span class="stars">★★★★★</span>
+          <span class="rating-num">${business.rating}</span>
+          <span class="review-count">(${business.reviews} reviews)</span>
         </div>
         <p class="listing-location">📍 ${business.address}</p>
-        </div>
+      </div>
 
-        <div class="listing-section">
+      <div class="listing-section">
         <h2>About</h2>
         <p>${business.description}</p>
-        </div>
+      </div>
 
-        <div class="listing-section">
+      <div class="listing-section">
         <h2>Services</h2>
         <div class="services-list">
-        ${business.services.map(s => `<span class="service-tag">${s}</span>`).join(' ')}
+          ${business.services.map(s => `<span class="service-tag">${s}</span>`).join('')}
         </div>
-        </div>
+      </div>
 
-<div class="listing-actions">
- ${business.whatsapp ? `
-    <a href="https://wa.me/${business.whatsapp}" target="_blank" class="btn-whatsapp">
-    💬Whatsapp
-    </a>` : ''}
-    <a href ="claim.html" class="btn-claim">Claim this listing</a>
+      <div class="listing-actions">
+        ${business.whatsapp ? `
+          <a href="https://wa.me/${business.whatsapp}"
+             target="_blank"
+             class="btn-whatsapp">
+            💬 WhatsApp
+          </a>` : ''}
+        <a href="claim.html" class="btn-claim">Claim this listing</a>
+      </div>
     </div>
-    </div>
-    `;
-});
-
-//===FETCH BUSINESS DATA===
-async function init() {
-    const response = await fetch ('./businesses.json');
-    const businesses = await response.json();
-
-    //==GET ID AND URL==
-
-    const params = new URLSearchParams (window.location.search);
-    const businessId = parseInt(params.get('id'));
-
-    //===FIND BUSINESS==
-    const business = business.find(b => b.id === businessId);
-
-    //==RENDER==
-
-if (!business){
-    document.getElementById('listingContent').innerHTML =`
-    <div class="empty-state">
-    <p>Business not found.</p>
-    <a href="index.html">Bsck to home</a>
-    </div>
-    `;
-    return;
+  `;
 }
 
-document.title = `${business.name} - VertRepo`;
-
-document.getElementById('listingContent').innerHTML = `
-<div class="listing-cover">
-<div class="listing-cover-placeholder">
-     ${b.category === 'restaurants' ? '🍽️' :
-       b.category === 'carwashes'? '🚗' : 
-       b.category === 'beauty' ? '💄' :
-       b.category === 'auto' ? '🔧' :
-       b.category === 'services' ? '🔧' : '🛠️'}
-</div>
-</div>
-<div class="listing-detail-container">
- <div="listing-header">
-  ${business.featured ? '<div class="card-badge">⭐ Featured</div>' : ''}
-   <div class="card-category">${business.category}</div>
-    <h1 class="listing-name">${business.name}</h1>
-      <div class="card-rating">
-       <span class="stars">⭐⭐⭐⭐⭐</span>
-        <span class="rating-num">${business.rating}</span>
-         <span class="review-count">(${business.reviews} reviews)</span>
-  </div>
-  <p class="listing-location">📍 ${business.address}</p>
-  </div>
-
-  <div class="listing-section">
-  <h2>About</h2>
-  <p>${business.description}</p>
-  </div>
-
-  <div class="listing-section">
-  <h2>Services</h2>
-  <div class="services-list">
-      ${business.services.map(s => `<span class="service-tag">${s}</span>`).join('')}
-  </div>
-  </div>
-
-  <div class="listing-actions">
-      ${business.whatsapp ? `
-        <a href="https://wa.me/${business.whatsapp}"
-        target="_blank"
-        class="btn-whatsapp">
-        💬WhatsApp
-        </a>` : ''}
-        <a href="claim.html" class="btn-claim">Claim this listing</a>
-        </div>
-        </div>
-        `;
-      }
-
-      window.addEventListener('DOMContentLoaded', init);
-  
+window.addEventListener('DOMContentLoaded', init);
