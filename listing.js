@@ -97,12 +97,13 @@ async function init() {
 
   document.getElementById('listingContent').innerHTML = `
     <div class="listing-cover">
-      ${b.images && b.images.length > 0
-    ? '<div class="listing-images">' + b.images.map(function(img) { return '<img src="' + img + '" class="listing-img" alt="' + b.name + '" />'; }).join('') + '</div>'
-    : '<div class="listing-cover-placeholder">' + (b.category === 'restaurants' ? '🍽️' : b.category === 'carwashes' ? '🚗' : b.category === 'beauty' ? '💅' : b.category === 'auto' ? '🔧' : '🛠️') + '</div>'
-  }
-</div>
-
+      <div class="listing-cover-placeholder">
+        ${business.category === 'restaurants' ? '🍽️' :
+          business.category === 'carwashes' ? '🚗' :
+          business.category === 'beauty' ? '💅' :
+          business.category === 'auto' ? '🔧' : '🛠️'}
+      </div>
+    </div>
     <div class="listing-detail-container">
       <div class="listing-header">
         ${business.featured ? '<div class="card-badge">⭐ Featured</div>' : ''}
