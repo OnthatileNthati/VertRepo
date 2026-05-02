@@ -1,3 +1,5 @@
+
+
 [{
     "id":1,
     "name":"Coming Soon",
@@ -9,7 +11,7 @@
     "location":"Pretoria East",
     "address":"Pretoria East",
     "whatsapp":"",
-    "featured":false
+    "featured":true
 },
 {
     "id":2,
@@ -52,31 +54,15 @@
 },
 {
     "id":5,
-    "name":"Coming Soon",
+    "name":"Patrick Handy Man Services",
     "category":"services",
     "rating":5.0,
     "reviews":0,
-    "description":"Be the first service business listed here",
+    "description":"We're doing renovation and maintenance such as building plastering paving cladding rhinolite painting plumbing electrical wallpaper drywalling all ceiling partitions and designs tiling demolition handyman decking carpentry welding waterproofing and many more...",
     "services":["Plumbing", "Electrical", "Cleaning"],
-    "location":"Pretoria East",
-    "address":"Pretoria East",
-    "whatsapp":"",
+    "location":"Brynstan",
+    "address":"25 Lesley Rd, Fourways Bryanston",
+    "whatsapp":"+27621526155",
     "featured":false
-}, 
-
-{
-   "id":6,
-    "name":"ShinePro Detailing",
-    "category":"carwashes",
-    "rating":4.9,
-    "reviews":45,
-    "description":"Premium hand wash and full detail in Moreleta Park",
-    "services":["Hand wash", "Full detail", "Interior clean"],
-    "location":"Moreleta Park",
-    "address":"67 Main Road, Moreleta Park",
-    "whatsapp":"2781857336",
-    "featured":true
 }
-
-
 ]
