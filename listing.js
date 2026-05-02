@@ -95,24 +95,24 @@ async function init() {
 
   document.title = `${business.name} — VertRepo`;
 
+var coverHTML = '';
+if (b.images && b.images.length > 0) {
+  coverHTML = '<div class="listing-images">' + 
+    b.images.map(function(img) { 
+      return '<img src="' + img + '" class="listing-img" alt="' + b.name + '" />'; 
+    }).join('') + 
+  '</div>';
+} else {
+  var emoji = b.category === 'restaurants' ? '🍽️' : 
+              b.category === 'carwashes' ? '🚗' : 
+              b.category === 'beauty' ? '💅' : 
+              b.category === 'auto' ? '🔧' : '🛠️';
+  coverHTML = '<div class="listing-cover-placeholder">' + emoji + '</div>';
+}
+
   document.getElementById('listingContent').innerHTML = `
-<div class="listing-cover">
-  ${(function() {
-    if (b.images && b.images.length > 0) {
-      return '<div class="listing-images">' + 
-        b.images.map(function(img) { 
-          return '<img src="' + img + '" class="listing-img" alt="' + b.name + '" />'; 
-        }).join('') + 
-      '</div>';
-    } else {
-      var emoji = b.category === 'restaurants' ? '🍽️' : 
-                  b.category === 'carwashes' ? '🚗' : 
-                  b.category === 'beauty' ? '💅' : 
-                  b.category === 'auto' ? '🔧' : '🛠️';
-      return '<div class="listing-cover-placeholder">' + emoji + '</div>';
-    }
-  })()}
-</div>
+<div class="listing-cover">${coverHTML}</div>
+
     <div class="listing-detail-container">
       <div class="listing-header">
         ${business.featured ? '<div class="card-badge">⭐ Featured</div>' : ''}
