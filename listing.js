@@ -96,14 +96,23 @@ async function init() {
   document.title = `${business.name} — VertRepo`;
 
   document.getElementById('listingContent').innerHTML = `
-    <div class="listing-cover">
-      <div class="listing-cover-placeholder">
-        ${business.category === 'restaurants' ? '🍽️' :
-          business.category === 'carwashes' ? '🚗' :
-          business.category === 'beauty' ? '💅' :
-          business.category === 'auto' ? '🔧' : '🛠️'}
-      </div>
-    </div>
+<div class="listing-cover">
+  ${(function() {
+    if (b.images && b.images.length > 0) {
+      return '<div class="listing-images">' + 
+        b.images.map(function(img) { 
+          return '<img src="' + img + '" class="listing-img" alt="' + b.name + '" />'; 
+        }).join('') + 
+      '</div>';
+    } else {
+      var emoji = b.category === 'restaurants' ? '🍽️' : 
+                  b.category === 'carwashes' ? '🚗' : 
+                  b.category === 'beauty' ? '💅' : 
+                  b.category === 'auto' ? '🔧' : '🛠️';
+      return '<div class="listing-cover-placeholder">' + emoji + '</div>';
+    }
+  })()}
+</div>
     <div class="listing-detail-container">
       <div class="listing-header">
         ${business.featured ? '<div class="card-badge">⭐ Featured</div>' : ''}
