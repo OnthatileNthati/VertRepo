@@ -59,10 +59,11 @@
     "rating":5.0,
     "reviews":0,
     "description":"We're doing renovation and maintenance such as building plastering paving cladding rhinolite painting plumbing electrical wallpaper drywalling all ceiling partitions and designs tiling demolition handyman decking carpentry welding waterproofing and many more...",
-    "services":["Plumbing", "Electrical", "Cleaning"],
+    "services":["Building & Extensions", "Maintenance solutions", "Paving", "Tiling", "Ceilings & Designs", "Partitions"],
     "location":"Brynstan",
     "address":"25 Lesley Rd, Fourways Bryanston",
     "whatsapp":"+27621526155",
+    "images":["images/Patrickf1.jpeg"],
     "featured":false
 }
 ]
