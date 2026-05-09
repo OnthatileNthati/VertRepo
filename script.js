@@ -84,7 +84,7 @@ async function loadFeaturedListings() {
 
   grid.innerHTML = featured.map(function(b) {
     return `
-      <a href="listing.html?id=${b.id}" class="listing-card featured-card">
+      <a href="${b.url ? b.url : 'listing.html?id=' + b.id}" class="listing-card featured-card">
         <div class="card-badge">⭐ Featured</div>
         <div class="card-img-placeholder">
           ${b.category === 'restaurants' ? '🍽️' :
