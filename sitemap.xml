@@ -19,5 +19,10 @@
     <loc>https://www.vertrepo.co.za/listing.html</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
+
+<url>
+ <loc>https://www.vertrepo.co.za/businesses/patrick-home-service.html</loc>
+ <priority>0.8</priority>
+ <changefreq>weekly</changefreq>
   </url>
 </urlset>
