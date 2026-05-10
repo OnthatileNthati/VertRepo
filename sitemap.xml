@@ -25,4 +25,12 @@
  <priority>0.8</priority>
  <changefreq>weekly</changefreq>
   </url>
+
+
+<url>
+<loc>https://www.vertrepo.co.za/businesses/kpg-plumbers.html</loc>
+<priority>0.8</priority>
+<changwfreq>weekly</changefreq>
+</url>
+
 </urlset>
