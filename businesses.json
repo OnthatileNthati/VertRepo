@@ -67,5 +67,21 @@
     "featured":false,
     "slug": "patrick-home-service.html",
     "url": "businesses/patrick-home-service.html"
+},
+
+{
+    "id":6,
+    "name":"KPG Plumbers",
+    "category":"services",
+    "rating":5.0,
+    "reviews":0,
+    "description":"KPG Plumbers offer professional plumbing services in Pretoria. Blocked drains, leaking pipes, burst pipes, geysers and more. No call-out fee.",
+    "services":["Blocked Drains", "Leaking Pipes", "Burst Pipes", "Geyser Repairs", "Same-Day Service", "Emergency Plumbing", "Residential", "Commercial"],
+    "location":"Pretoria",
+    "whatsapp":"+27704324255",
+    "images":["images/KPGF1.jpg", "images/KPGT1.jpg", "KPGS1.jpg", "images/KPGS2.jpeg", "images/KPGS3.jpg", "images/KPGS4.jpg"],
+    "featured":false,
+    "slug": "kpg-plumbers.html",
+    "url": "businesses/kpg-plumbers.html"
 }
 ]
