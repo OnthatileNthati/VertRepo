@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.vertrepo.co.za/</loc>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
+    <lastmod>2026-05-11</lastmod>
   </url>
+
   <url>
     <loc>https://www.vertrepo.co.za/search.html</loc>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
+    <lastmod>2026-05-11</lastmod>
   </url>
+
   <url>
     <loc>https://www.vertrepo.co.za/claim.html</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
+    <lastmod>2026-05-11</lastmod>
   </url>
+
   <url>
     <loc>https://www.vertrepo.co.za/listing.html</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
+    <lastmod>2026-05-11</lastmod>
+  </url>
 
 <url>
  <loc>https://www.vertrepo.co.za/businesses/patrick-home-service.html</loc>
  <priority>0.8</priority>
  <changefreq>weekly</changefreq>
+ <lastmod>2026-05-11</lastmod>
   </url>
 
 
@@ -31,6 +41,7 @@
 <loc>https://www.vertrepo.co.za/businesses/kpg-plumbers.html</loc>
 <priority>0.8</priority>
 <changefreq>weekly</changefreq>
+<lastmod>2026-05-11</lastmod>
 </url>
 
 </urlset>
