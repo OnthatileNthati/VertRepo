@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams();
       if (query) params.set('q', query);
       if (category) params.set('cat', category);
-      window.location.href = `search.html?${params.toString()}`;
+      window.location.href = 'search.html?' + params.toString();
     });
   }
 
