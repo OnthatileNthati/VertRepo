@@ -79,7 +79,7 @@
     "services":["Blocked Drains", "Leaking Pipes", "Burst Pipes", "Geyser Repairs", "Same-Day Service", "Emergency Plumbing", "Residential", "Commercial"],
     "location":"Pretoria",
     "whatsapp":"+27704324255",
-    "images":["images/KPGF1.jpg", "images/KPGT1.jpg", "KPGS1.jpg", "images/KPGS2.jpeg", "images/KPGS3.jpg", "images/KPGS4.jpg"],
+    "images":["images/KPGF1.jpg", "images/KPGT1.jpg", "images/KPGS1.jpg", "images/KPGS2.jpeg", "images/KPGS3.jpg", "images/KPGS4.jpg"],
     "featured":false,
     "slug": "kpg-plumbers.html",
     "url": "businesses/kpg-plumbers.html"

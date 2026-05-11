@@ -1,6 +1,6 @@
 //===FETCH BUSINESS DATA
 async function init() {
-  const response = await fetch('./businesses.json');
+  const response = await fetch('./data/businesses.json');
   const businesses = await response.json();
 
   //===GET URL PARAMS==
