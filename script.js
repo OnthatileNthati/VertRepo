@@ -115,7 +115,7 @@ document.getElementById('searchBTN').addEventListener('click', () => {
   const query = document.getElementById('searchInput').value;
   const category = document.getElementById('categoryFilter').value;
 
-  window.location.href = `search.html?q=${encodedURIComponent(query)}&cat=${encodedURIComponent(category)}`;
+  window.location.href = `search.html?q=${encodeURIComponent(query)}&cat=${encodeURIComponent(category)}`;
 });
 
 updateCategoryCounts();
