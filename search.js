@@ -51,11 +51,12 @@ async function init() {
 
     grid.innerHTML = list.map(b => `
       <a href="${b.url ? b.url : 'listing.html?id=' + b.id}" class="listing-card ${b.featured ? 'featured-card' : ''}">
-        ${b.featured ? '<div class="card-badge">⭐ Featured</div>' : ''}  
-        ${b.images && b.images.length > 0 
-       ? '<img src="' + b.images[0] + '" class="card-img-thumb" alt="' + b.name + '" />'
-       : '<div class="card-img-placeholder">' + (b.category === 'restaurants' ? '🍽️' : b.category === 'carwashes' ? '🚗' : b.category === 'beauty' ? '💅' : b.category === 'auto' ? '🔧' : '🛠️') + '</div>'
-        }
+        ${b.featured ? '<div class="card-badge">⭐ Featured</div>' : ''}
+        <div class="card-img-placeholder">
+          ${b.category === 'restaurants' ? '🍽️' :
+            b.category === 'carwashes' ? '🚗' :
+            b.category === 'beauty' ? '💅' :
+            b.category === 'auto' ? '🔧' : '🛠️'}
         </div>
         <div class="card-body">
           <div class="card-category">${b.category}</div>
