@@ -649,7 +649,7 @@ a{
 }
 
 .card-image-thumb{
-    width: 100%;
-    height: 160px;
+    width: 50%;
+    height: 100x;
     object-fit: cover;
 }
