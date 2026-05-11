@@ -650,6 +650,6 @@ a{
 
 .card-image-thumb{
     width: 50%;
-    height: 100px;
+    height: 50px;
     object-fit: contain;
 }
