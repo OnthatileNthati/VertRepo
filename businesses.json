@@ -83,5 +83,23 @@
     "featured":false,
     "slug": "kpg-plumbers.html",
     "url": "businesses/kpg-plumbers.html"
+},
+
+{
+    "id":7,
+    "name":"OC Appliance",
+    "category":"services",
+    "rating":5.0,
+    "reviews":0,
+    "description":"OC Appliances repairs fridges, washing machines, dishwashers, tumble dryers, microwaves, stoves, ovens and more in Kempton Park.",
+    "services":["Washing Machines", "Dishwshers", "Tumble Dryers", "Fridges & Freezers", "Chest Freezers", "Microwaves", "Stoves and Hobs", "Ovens", "Coffee Machines", "Ice Machines"],
+    "location":"Kempton Park",
+    "whatsapp":"+27723344739",
+    "images":["images/OC1.jpeg", "images/OC2.jpeg"],
+    "featured":false,
+    "slug": "oc-appliance.html",
+    "url": "businesses/oc-appliance.html"
 }
+
+
 ]
