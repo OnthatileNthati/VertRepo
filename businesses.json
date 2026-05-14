@@ -99,7 +99,25 @@
     "featured":false,
     "slug": "oc-appliance.html",
     "url": "businesses/oc-appliance.html"
+}, 
+
+{
+    "id":8,
+    "name":"Enoch's Building Services",
+    "category":"services",
+    "rating":5.0,
+    "reviews":0,
+    "description":"Enoch Builing Services offers a wide range of services from, plumbing and electrical, swimming pools, waterproofing, renovations, steel structures, carports, starircases and railings, warehouses",
+    "services":["Residential Renovations", "Construction Services", "Painting & Interior Repairs", "Glass & Aluminium Services", "Waterproofing", "Security & Trellis Slamlock Gates", "Bathroom Renovations / Add-ons", "Plumbing & Electrical", "Flooring, Tiling & Paving", "Swimming Pools", "Wall Building & Renovations", "Steel Structures", "Roofing", "Carports", "Warehouses", "Gates & Fencing", "Staircases & Railings"],
+    "location":["Gauteng", "Mpumalanga", "Limpopo"],
+    "whatsapp":"+27692341762",
+    "images":["images/ESR1.jpeg", "images/EBS1.jpeg", "images/EBS2.jpeg"],
+    "featured":false,
+    "slug": "enoch-building-services.html",
+    "url":"businesses/enoch-building-services.html"
 }
+
+
 
 
 ]
