@@ -115,6 +115,22 @@
     "featured":false,
     "slug": "enoch-building-services.html",
     "url":"businesses/enoch-building-services.html"
+},
+
+{
+    "id":9,
+    "name":"Alicom Plumbers",
+    "category":"services",
+    "rating":4.8,
+    "reviews":18,
+    "description":"Reliable solutions, Quality worksmanship. call 079 094 3262",
+    "services":["Burst Pipes", "Blocked Drains", "Blocked Toilets", "Geyser Repairs", "Geyser Installations", "New Plumbing Systems", "Business Installations", "Home Installations", "Rental Installations"],
+    "location":"Pretoria",
+    "whatsapp":"+27790943262",
+    "images":["images/AP1.jpeg", "images/AP2.jpeg"],
+    "featured":false,
+    "slug":"alicom-plumbers.html",
+    "url":"businesses/alicom-plumbers.html",
 }
 
 
