@@ -131,7 +131,22 @@
     "featured":false,
     "slug":"alicom-plumbers.html",
     "url":"businesses/alicom-plumbers.html"
+}, 
+
+{
+    "id":10,
+    "name":"Rathando Lanscaping",
+    "category":"services",
+    "rating":0,
+    "reviews":2,
+    "description":"Affordable lanscaping and construction company in Midrand",
+    "services":["Landscape Design", "Frosting Vinyl", "Garden Design", "Irrigation System Installation", "Building", "Gladding", "Plastering", "Painting", "Tiling", "Tree Felling", "Pool Design", "Paving"],
+    "location":"Midrand",
+    "whatsapp":"+27658151480",
+    "images":["images/RLOGO.jpg", "images/RP1.jpg", "images/RP2.jpg"],
+    "featured":false,
+    "slug":"rathando-landscaping.html",
+    "url":"businesses/rathando-landscaping.html"
+
 }
-
-
 ]
