@@ -16,14 +16,14 @@
     {
       "@context": "https://schemas.org",
       "@type": "LocalBusiness",
-      "name": "Andy's Plumbing",
+      "name": "Andy's Plumbing and Tiling Services",
       "telephone": "+27791571544 ",
       "address": {
       "@type": "PostalAddress",
       "addressLocality":"Pretoria",
       "addressCountry": "ZA,"
       },
-      "url": "https://www.vertrepo.co.za/businesses/andy-plumbing.html",
+      "url": "https://www.vertrepo.co.za/businesses/andys-plumbing.html",
       "description": "Fast and Reliable plumbing and tiling services in Pretoria"
     }
   </script>
