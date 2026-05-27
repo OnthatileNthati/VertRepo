@@ -148,5 +148,22 @@
     "slug":"rathando-landscaping.html",
     "url":"businesses/rathando-landscaping.html"
 
+}, 
+
+{
+    "id":11,
+    "name":"Andy's Plumbing and Tiling Services",
+    "category":"services",
+    "rating":5,
+    "reviews":0,
+    "description":"Quality Garenteed plumbing and tiling services in Pretoria",
+    "services":["Home Renovations", "Store Renovations", "Air-condition Services", "Electrical Wiring", "Kitchen Renovations", "Waterproofing", "Plumbing", "Painting", "Tiling", "Building Maintenance"],
+    "location":"Pretoria",
+    "whatsapp":"+27658151480",
+    "images":["images/RLOGO.jpg", "images/AT1.jpeg", "images/AT2.jpeg", "images/AT3.jpeg"],
+    "featured":false,
+    "slug":"andys-plumbing.html",
+    "url":"businesses/andys-plumbing.html"
+
 }
 ]
