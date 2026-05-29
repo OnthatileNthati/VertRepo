@@ -130,7 +130,7 @@
     "images":["images/AP1.jpeg", "images/AP2.jpeg"],
     "featured":false,
     "slug":"alicom-plumbers.html",
-    "url":"businesses/alicom-plumbers.html"
+    "url":"businesses/alicom-plumbers.html",
 }, 
 
 {
@@ -156,14 +156,29 @@
     "category":"services",
     "rating":5,
     "reviews":0,
-    "description":"Quality Garenteed plumbing, tiling services and building maintenence in Pretoria",
-    "services":["Home Renovations", "Store Renovations", "Air-condition Services", "Electrical Wiring", "Kitchen Renovations", "Waterproofing", "Plumbing", "Painting", "Tiling", "Building Maintenance"],
+    "description":"Quality gaurenteed plumbing, tiling, waterproofing and building maintenance services in Pretoria.",
+    "services":["Plumbing", "Waterproofing", "Tiling", "Building Maintenance", "Electrical Wiring", "Kitchen Renovations", "Home Renovations", "Store Renovations", "Painting", "Air Conditioning Services"],
     "location":"Pretoria",
     "whatsapp":"+27658151480",
     "images":["images/RLOGO.jpg", "images/AT1.jpeg", "images/AT2.jpeg", "images/AT3.jpeg"],
     "featured":false,
     "slug":"andys-plumbing.html",
-    "url":"businesses/andys-plumbing.html"
-
+    "url":"businesses/andys-plumbing.html",
+    "businessType":"plumbing and tiling",
+    "keywords":[
+        "plumber services in Pretoria",
+        "plumber Pretoria",
+        "tiling services in Pretoria",
+        "waterproofing services in Pretoria",
+        "building maintenance in Pretoria",
+        "electrical wiring in Pretoria",
+        "kitchen renovations in Pretoria",
+        "home renovations in Pretoria",
+        "store renovations in Pretoria",
+        "painting services in Pretoria",
+        "air conditioning services in Pretoria"
+    ],
+    "seoTitle":"Plumber in Pretoria | Andy's Plumbing and Tiling Services",
+    "seoDescription":"Reliable plumbing, waterproofing, tiling and building maintenance serivces in Pretoria. Free quotations available"
 }
 ]
