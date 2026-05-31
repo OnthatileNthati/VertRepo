@@ -58,10 +58,12 @@
     "category":"services",
     "rating":5.0,
     "reviews":0,
-    "description":"We're doing renovation and maintenance such as building plastering paving cladding rhinolite painting plumbing electrical wallpaper drywalling all ceiling partitions and designs tiling demolition handyman decking carpentry welding waterproofing and many more...",
-    "services":["Building & Extensions", "Maintenance solutions", "Paving", "Tiling", "Ceilings & Designs", "Partitions"],
+    "description":"Professional handyman, renovation and property maintenance services in Bryanston and Johannesburg. Services include building, plastering, paving, tiling, painting, plumbing, electrical work, drywalling, ceilings, waterproofing, carpentry, welding and general home improvements.",
+    "services":["Handyman Services,", "Home Renovations", "Building & Extentions", "Property Maintenance", "Plastering", "Paving", "Tiling", "Painting", "Plumbing", "Electrical Work", "Drywalling & Ceilings", "Waterproofing", "Carpentry", "Welding", "Demolition"],
     "location":"Bryanston",
     "address":"Bryanston",
+    "seoDescription":"Professional handyman, renovation and property maintenance services in Bryanston and Johannesburg. Services include building, plastering, paving, tiling, painting, plumbing, electrical work, drywalling, ceilings, waterproofing, carpentry, welding and general home improvements.",
+    "seoTitle":"Patrick Home Service | Handyman & Renovation Services in Bryanston & Johannesburg | VertRepo",
     "whatsapp":"+27621526155",
     "images":["images/Patrickf1.jpeg", "images/Patrickf2.jpeg", "images/PatrikHS.jpeg", "images/PatrickHS2.jpeg"],
     "featured":false,
@@ -175,8 +177,20 @@
     "images":["images/RLOGO.jpg", "images/RP1.jpg", "images/RP2.jpg"],
     "featured":false,
     "slug":"rathando-landscaping.html",
-    "url":"businesses/rathando-landscaping.html"
-
+    "url":"businesses/rathando-landscaping.html",
+    "schema": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rathando Landscaping",
+        "telephone": "+27658151480",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality":"Midrand",
+            "addressCountry": "ZA"
+        },
+        "url": "https://www.vertrepo.co.za/businesses/rathando-landscaping.html",
+        "description": "Professional landscaping and construction in Midrand"
+    }
 }, 
 
 {
