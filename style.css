@@ -662,3 +662,11 @@ a{
   border-radius: var(--radius);
   flex-shrink: 0;
 }
+
+.about-vertrepo {
+max-width: 1000px;
+margin: 0 auto;
+padding: 60px 20px;
+background: var(--grey-bg);
+padding: 60px 20px;
+}
