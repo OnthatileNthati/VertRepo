@@ -5,14 +5,14 @@
     <loc>https://www.vertrepo.co.za/</loc>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-01</lastmod>
   </url>
 
   <url>
     <loc>https://www.vertrepo.co.za/search.html</loc>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-31</lastmod>
   </url>
 
   <url>
@@ -33,7 +33,7 @@
  <loc>https://www.vertrepo.co.za/businesses/patrick-home-service.html</loc>
  <priority>0.8</priority>
  <changefreq>weekly</changefreq>
- <lastmod>2026-05-11</lastmod>
+ <lastmod>2026-05-31</lastmod>
   </url>
 
 
@@ -41,42 +41,42 @@
 <loc>https://www.vertrepo.co.za/businesses/kpg-plumbers.html</loc>
 <priority>0.8</priority>
 <changefreq>weekly</changefreq>
-<lastmod>2026-05-11</lastmod>
+<lastmod>2026-05-31</lastmod>
 </url>
 
 <url>
  <loc>https://www.vertrepo.co.za/businesses/oc-appliance.html</loc>
  <priority>0.8</priority>
  <changefreq>weekly</changefreq>
- <lastmod>2026-05-12</lastmod>
+ <lastmod>2026-05-29</lastmod>
   </url>
 
 <url>
  <loc>https://www.vertrepo.co.za/businesses/enoch-building-services.html</loc>
  <priority>0.8</priority>
  <changefreq>weekly</changefreq>
- <lastmod>2026-05-14</lastmod>
+ <lastmod>2026-05-29</lastmod>
   </url>
 
   <url>
  <loc>https://www.vertrepo.co.za/businesses/alicom-plumbers.html</loc>
  <priority>0.8</priority>
  <changefreq>weekly</changefreq>
- <lastmod>2026-05-14</lastmod>
+ <lastmod>2026-05-29</lastmod>
   </url>
 
 <url>
 <loc>https://www.vertrepo.co.za/businesses/rathando-landscaping.html</loc>
 <priority>0.8</priority>
 <changefreq>weekly</changefreq>
-<lastmod>2026-05-19</lastmod>
+<lastmod>2026-05-27</lastmod>
 </url>
 
 <url>
 <loc>https://www.vertrepo.co.za/businesses/andys-plumbing.html</loc>
 <priority>0.8</priority>
 <changefreq>weekly</changefreq>
-<lastmod>2026-05-19</lastmod>
+<lastmod>2026-05-27</lastmod>
 </url>
 
 </urlset>
