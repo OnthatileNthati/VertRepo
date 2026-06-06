@@ -671,3 +671,12 @@ background: var(--grey-bg);
 padding: 60px 20px;
 margin-bottom: 60px;
 }
+
+.btn-email{
+  background: #1a0bb8;
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
