@@ -225,5 +225,63 @@
     ],
     "seoTitle":"Plumber in Pretoria | Andy's Plumbing and Tiling Services",
     "seoDescription":"Reliable plumbing, waterproofing, tiling and building maintenance serivces in Pretoria. Free quotations available"
+},
+
+{
+"id":12,
+    "name":"Alpha Vision Construction & Home Maintenance",
+    "category":"services",
+    "rating":5.0,
+    "reviews":0,
+    "description":"Alpha Vision Construction & Home Maintenance is a full-service home repair and constuction company based in Johannesburg North. From remodels and new floors to plumbing, electrical work and room additions, the team delivers professional worksmanship, fair pricing and quick project completion for residential and commercial clients.",
+    "services":[
+        "Bathrooms",
+        "Cabinet Refinishing and Painting",
+        "Ceramic Tile",
+        "Color Coating",
+        "Countertops",
+        "Doors",
+        "Electrical",
+        "Exterior and Interior Painting",
+        "Floors",
+        "General Home Repair",
+        "Kitchens",
+        "New Construction",
+        "New Tile",
+        "Patios",
+        "Plastering",
+        "Plumbing",
+        "Remodeling",
+        "Re-tile",
+        "Room Additions",
+        "Shower Pan Replacements",
+        "Stucco",
+        "Water Damage Repair",
+        "Window"
+    ],
+    "location":"Johannesburg North",
+    "address":"169 Oxford road. Craddock square , Johannesburg",
+    "whatsapp":"+27728876103",
+    "featured":false,
+    "images":["AVC1.jpg", "AVC2.jpg", "AVC3.jpg"],
+    "keywords":[
+"construction Johannesburg North",
+"home maintenance Johannesburg North",
+"building services Johannesburg North",
+"renovation services Johannesburg North",
+"plumbing Johannesburg North",
+"electrical services Johannesburg North",
+"home repairs Johannesburg North",
+"remodeling Johannesburg North",
+"painting Johannesburg North",
+"new construction Johannesburg North", 
+"tile installation Johannesburg North",
+"room additions Johannesburg North"
+],
+"seoTitle":"Alpha Vision Construction & Home Maintenance | Construction & Home Maintenace Services in Johannesburg North ",
+"seoDescription":"Alpha Vision Construction & Home maintenance provides professional construction, remodeling, plumbing, electrical and home maintenance services in Johannesburg North. Affordable solutions for homes and businesses. ",
+"slug":"alpha-vision-construction.html",
+"url":"businesses/alpha-vision-construction.html"
 }
+
 ]
