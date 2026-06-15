@@ -282,6 +282,54 @@
 "seoDescription":"Alpha Vision Construction & Home maintenance provides professional construction, remodeling, plumbing, electrical and home maintenance services in Johannesburg North. Affordable solutions for homes and businesses. ",
 "slug":"alpha-vision-construction.html",
 "url":"businesses/alpha-vision-construction.html"
+},
+
+{
+    "id":13,
+    "name":"B&L Plumbers ",
+    "category":"services",
+    "rating":5,
+    "reviews":0,
+    "description":"Need a reliable plumber in Gauteng? B&L Plumbers offers geyser repairs, blocked drain cleaning, leak detection, burst pipe repairs and plumbing installation. Call today for fast and affordable services.",
+    "services":[
+    "Burst Pipe Repairs",
+    "Blocked Drain Cleaning",
+    "Blocked Toilet Repairs",
+    "Geyser Repairs",
+    "Geyser Installations",
+    "Leak Detection",
+    "Tap Repairs",
+    "Bathroom Plumbing",
+    "Emergency Plumbing",
+    "New Plumbing Installations",
+    "Ceiling Repairs",
+    "Tiling Services"
+    ],
+
+    "location":"Gauteng",
+    "areaServed":"Gauteng",
+    "@type":"City",
+    "whatsapp":"+27790943262",
+    "images":["bll.jpeg", "bll2.jpeg", "binstallation.jpeg"],
+    "featured":false,
+    "slug":"b&l-plumbers.html",
+    "url":"businesses/b&l-plumbing",
+    "businessType":"plumbing, tiling and ceiling repairs",
+    "keywords":[
+        "plumber Gauteng",
+        "emergency plumbing Gauteng",
+        "geyser repairs Gauteng", 
+        "blocked drain cleaning Gauteng",
+        "ceiling installation Gauteng",
+        "plumber near me",
+        "residential plumber Gauteng",
+        "pipe repairs",
+        "commerical plumber"
+    ],
+
+    "seoTitle":"Plumber in Gauteng | B&L Plumbers in Gauteng | VertRepo",
+    "seoDescription":"Find trusted plumbing services in Gauteng with B&L Plumbers. From geyser repairs to geyser installations, B&L Plumbers is ready to help."
 }
+
 
 ]
