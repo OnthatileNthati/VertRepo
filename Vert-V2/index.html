@@ -6,7 +6,8 @@
 <title>VertGuide — Pretoria East Business Directory</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -34,27 +35,27 @@
       <h1 class="hero__title">
         The wiring for <span class="hero__title-accent">Pretoria East</span> business, mapped by street.
       </h1>
-      <p class="hero__sub">Find trusted local businesses, tradespeople, and things to do — indexed by suburb, not by ad spend.</p>
+      <p class="hero__sub">Discover Pretoria in One Search</p>
 
       <form class="search" id="heroSearchForm">
-        <input type="text" placeholder="Electrician, restaurant, car wash…" class="search__input" id="searchInput">
+        <input type="text" placeholder="Things to do, restaurants, date ideas..." class="search__input" id="searchInput">
         <select class="search__suburb" id="categoryFilter">
           <option value="">All categories</option>
-          <option value="restaurants">Restaurants</option>
-          <option value="carwashes">Car Washes</option>
-          <option value="beauty">Beauty</option>
-          <option value="auto">Automotive</option>
+          <option value="restaurants">Things to Do</option>
+          <option value="carwashes">Date Ideas</option>
+          <option value="beauty">Restaurants</option>
+          <option value="auto">Businesses</option>
           <option value="services">Services</option>
         </select>
         <button type="submit" class="btn btn--cta search__btn" id="searchBTN">Search</button>
       </form>
 
       <div class="chips">
+        <a href="search.html?cat=restaurants" class="chip">Things to Do</a>
+        <a href="search.html?cat=date-ideas" class="chip">Date Ideas</a>
         <a href="search.html?cat=restaurants" class="chip">Restaurants</a>
-        <a href="search.html?cat=carwashes" class="chip">Car Wash</a>
-        <a href="search.html?cat=beauty" class="chip">Beauty</a>
-        <a href="search.html?cat=auto" class="chip">Automotive</a>
-        <a href="search.html?cat=services" class="chip">Services</a>
+        <a href="search.html?cat=businesses" class="chip">Businesses</a>
+        <a href="search.html?cat=services" class="chip">Local Services</a>
       </div>
     </div>
   </section>
@@ -77,26 +78,21 @@
       <a href="search.html?cat=services" class="index-card">
         <span class="index-card__tab">B</span>
         <h3>Local Services</h3>
-        <p>Electricians, plumbers, handymen</p>
+        <p>Electricians, plumbers, handymen, Automotive</p>
         <span class="index-card__count">0 listings</span>
       </a>
-      <a href="search.html?cat=carwashes" class="index-card">
+      <a href="search.html?cat=date-ideas" class="index-card">
         <span class="index-card__tab">C</span>
-        <h3>Car Washes</h3>
-        <p>Wash, detail, valet</p>
+        <h3>Date Ideas</h3>
+        <p>Arts and craft, fine dinning, picnic spots</p>
         <span class="index-card__count">0 listings</span>
       </a>
-      <a href="search.html?cat=beauty" class="index-card">
+      <a href="search.html?cat=things-to-do" class="index-card">
         <span class="index-card__tab">D</span>
-        <h3>Beauty</h3>
-        <p>Salons, spas, nails</p>
+        <h3>=Things To Do</h3>
+        <p>Fun activities to do when you're in Pretoria East</p>
         <span class="index-card__count">0 listings</span>
-      </a>
-      <a href="search.html?cat=auto" class="index-card">
-        <span class="index-card__tab">E</span>
-        <h3>Automotive</h3>
-        <p>Repairs, parts, servicing</p>
-        <span class="index-card__count">0 listings</span>
+
       </a>
     </div>
   </section>
@@ -117,9 +113,9 @@
   <section class="section">
     <div class="why">
       <div class="why__copy">
-        <p class="eyebrow">Why VertGuide</p>
-        <h2 class="section__title">Built for the street, not the algorithm.</h2>
-        <p>We index Pretoria East by suburb and trade, so people find who's actually nearby — not just who paid the most.</p>
+        <p class="eyebrow">Why Use VertGuide</p>
+        <h2 class="section__title">Discover Pretoria in One Search</h2>
+        <p>Search restaurants, services, and local favourites by suburb making it easier to find what you need.</p>
         <a href="#" class="btn btn--ghost">Learn more</a>
       </div>
       <ul class="why__stats">
@@ -166,6 +162,7 @@
     <div class="footer__bottom">© 2026 VertGuide. Pretoria East, South Africa 🇿🇦</div>
   </footer>
 
-<script src="script.js"></script>
+ <script>lucide.createIcons();</script>
+
 </body>
 </html>

@@ -73,7 +73,21 @@ img{max-width:100%;display:block;}
 }
 
 /* HERO */
-.hero{position:relative;background:var(--ink);color:var(--paper);overflow:hidden;padding:4rem 1.25rem 3.5rem;}
+
+.hero{
+  position:relative;
+  background:
+    linear-gradient(rgba(18,20,28,0.75), rgba(18,20,28,0.9)),
+    url('../images/pta2.jpg');
+  background-size:cover;
+  background-position:center;
+  color:var(--paper);
+  overflow:hidden;
+  padding:4rem 1.25rem 3.5rem;
+}
+
+
+
 .hero__grid{
   position:absolute;inset:0;
   background-image:linear-gradient(var(--line-dark) 1px, transparent 1px), linear-gradient(90deg, var(--line-dark) 1px, transparent 1px);
@@ -182,3 +196,12 @@ img{max-width:100%;display:block;}
 .footer__col a{display:block;font-size:0.88rem;margin-bottom:0.5rem;}
 @media(min-width:700px){.footer__inner{grid-template-columns:1.4fr 1fr 1fr 1fr;}}
 .footer__bottom{text-align:center;font-size:0.78rem;padding:1.25rem;border-top:1px solid var(--line-dark);}
+
+.section--dark{
+  background:var(--ink);
+  color:var(--paper);
+  max-width:none;
+}
+.section--dark > *{max-width:1200px;margin-left:auto;margin-right:auto;}
+.section--dark .why__copy p{color:var(--muted-dark);}
+.section--dark .why__stats li{border-top-color:var(--line-dark);}
