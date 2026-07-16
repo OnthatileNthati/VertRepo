@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Listing — VertGuide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="search.html">Directory</a>
+        <a href="events.html">Events</a>
+        <a href="#">Blog</a>
+      </nav>
+      <a href="claim.html" class="btn btn--cta nav__cta">List Your Business</a>
+      <button class="nav__burger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- LISTING CONTENT (placeholder markup — JS will replace this later) -->
+  <div id="listingContent">
+
+   <div id="listingContent">
+
+    <div class="listing-cover">
+      <i data-lucide="utensils" class="listing-cover-placeholder"></i>
+    </div>
+
+    <div class="listing-detail-container">
+      <div class="listing-header">
+        <div class="card-badge"><i data-lucide="star"></i> Featured</div>
+        <div class="card-category">Restaurants</div>
+        <h1 class="listing-name">[Business Name]</h1>
+        <div class="card-rating">
+          <span class="stars">★★★★★</span>
+          <span class="rating-num">0.0</span>
+          <span class="review-count">(0 reviews)</span>
+        </div>
+        <p class="listing-location"><i data-lucide="map-pin"></i> [Suburb, Pretoria East]</p>
+      </div>
+
+      <div class="listing-section">
+        <h2>About</h2>
+        <p>[Business description goes here.]</p>
+      </div>
+
+      <div class="listing-section">
+        <h2>Services</h2>
+        <div class="services-list">
+          <span class="service-tag">[Service 1]</span>
+          <span class="service-tag">[Service 2]</span>
+          <span class="service-tag">[Service 3]</span>
+        </div>
+      </div>
+
+      <div class="listing-actions">
+        <a href="#" class="btn-whatsapp"><i data-lucide="message-circle"></i> WhatsApp</a>
+        <a href="claim.html" class="btn-claim">Claim this listing</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <p class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></p>
+        <p>The Pretoria East business index. Built street by street.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="search.html">Directory</a>
+        <a href="events.html">Events</a>
+      </div>
+      <div class="footer__col">
+        <h4>For Businesses</h4>
+        <a href="claim.html">List Your Business</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="mailto:vertexrastudio@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 VertGuide. Pretoria East, South Africa 🇿🇦</div>
+  </footer>
+
+<script>lucide.createIcons();</script>
+<script src="js/listing.js"></script>
+</body>
+</html>
