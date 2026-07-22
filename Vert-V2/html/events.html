@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events — VertGuide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="search.html">Directory</a>
+        <a href="events.html" class="is-active">Events</a>
+        <a href="#">Blog</a>
+      </nav>
+      <a href="claim.html" class="btn btn--cta nav__cta">List Your Business</a>
+      <button class="nav__burger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- EVENTS HERO -->
+  <section class="events-hero"> 
+    <div class="events-hero__inner">
+      <p class="eyebrow">Pretoria East</p>
+      <h1 class="events-hero__title">Discover <span class="hero__title-accent">special events</span> in Pretoria</h1>
+      <p class="events-hero__sub">From live music and festivals to markets and community events — don't miss out.</p>
+
+      <form class="search" id="eventsSearchForm">
+        <input type="text" placeholder="Search events…" class="search__input" id="eventSearchInput">
+        <button type="submit" class="btn btn--cta search__btn" id="eventSearchBTN">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- EVENT FILTER CHIPS -->
+  <section class="filter-bar">
+    <div class="filter-bar__inner">
+      <button class="chip chip--filter is-active" data-cat="">All</button>
+      <button class="chip chip--filter" data-cat="live-music">Live Music</button>
+      <button class="chip chip--filter" data-cat="arts-culture">Arts &amp; Culture</button>
+      <button class="chip chip--filter" data-cat="food-drink">Food &amp; Drink</button>
+      <button class="chip chip--filter" data-cat="festivals">Festivals</button>
+      <button class="chip chip--filter" data-cat="sports-fitness">Sports &amp; Fitness</button>
+      <button class="chip chip--filter" data-cat="community">Community</button>
+    </div>
+  </section>
+
+  <!-- EVENTS LIST -->
+  <section class="section results">
+    <div class="results__layout">
+
+      <div class="results__main">
+        <div class="results__head">
+          <h2 class="section__title" style="flex-basis:auto;">Upcoming Events</h2>
+          <p class="results__count" id="eventsCount">Showing 0 events</p>
+        </div>
+
+        <div class="event-tabs">
+          <button class="event-tab is-active" data-range="all">All Events</button>
+          <button class="event-tab" data-range="week">This Week</button>
+          <button class="event-tab" data-range="month">This Month</button>
+          <button class="event-tab" data-range="weekend">This Weekend</button>
+        </div>
+
+        <div class="event-grid" id="eventsGrid">
+          <!-- JS populates event cards here later -->
+
+          <!-- Placeholder card structure for reference -->
+          <article class="event-card">
+            <div class="event-card__media">
+              <span class="card-badge"><i data-lucide="star"></i> Featured</span>
+            </div>
+
+            <div class="countdown">
+              <p class="countdown__label">Starts In</p>
+              <div class="countdown__grid">
+                <div class="countdown__unit"><span class="countdown__num">00</span><span class="countdown__label-sm">Days</span></div>
+                <div class="countdown__unit"><span class="countdown__num">00</span><span class="countdown__label-sm">Hours</span></div>
+                <div class="countdown__unit"><span class="countdown__num">00</span><span class="countdown__label-sm">Mins</span></div>
+                <div class="countdown__unit"><span class="countdown__num">00</span><span class="countdown__label-sm">Secs</span></div>
+              </div>
+              <a href="#" class="btn btn--ghost event-card__btn">View Details →</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="empty-state" id="eventsEmptyState" style="display:none;">No events found.</p>
+      </div>
+
+      <aside class="results__side">
+        <div class="side-card">
+          <h4>Popular Categories</h4>
+          <ul class="side-list" id="eventCategoryBreakdown">
+            <li>Live Music <span>0</span></li>
+            <li>Food &amp; Drink <span>0</span></li>
+            <li>Festivals <span>0</span></li>
+            <li>Sports &amp; Fitness <span>0</span></li>
+            <li>Arts &amp; Culture <span>0</span></li>
+          </ul>
+        </div>
+
+        <div class="side-card side-card--dark">
+          <h4>Never Miss an Event</h4>
+          <p>Get the best events and deals delivered to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit" class="btn btn--cta">Subscribe</button>
+          </form>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <p class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></p>
+        <p>The Pretoria East business index. Built street by street.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="search.html">Directory</a>
+        <a href="events.html">Events</a>
+      </div>
+      <div class="footer__col">
+        <h4>For Businesses</h4>
+        <a href="claim.html">List Your Business</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="mailto:vertexrastudio@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 VertGuide. Pretoria East, South Africa 🇿🇦</div>
+  </footer>
+
+<script src="../js/events.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

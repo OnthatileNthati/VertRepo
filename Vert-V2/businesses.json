@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": "[Business Name]",
+    "category": "restaurants",
+    "rating": 4.6,
+    "reviews": 128,
+    "googleReviewsUrl": "https://www.google.com/maps/place/...",
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "description": "[Short description of the business.]",
+    "services": ["Service 1", "Service 2", "Service 3"],
+    "address": "Menlyn, Pretoria East",
+    "whatsapp": "27821234567",
+    "featured": true,
+    "images": []
+  },
+  {
+    "id": 2,
+    "name": "[Business Name]",
+    "category": "services",
+    "rating": 4.9,
+    "reviews": 53,
+    "googleReviewsUrl": "https://www.google.com/maps/place/...",
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "description": "[Short description of the business.]",
+    "services": ["Service 1", "Service 2", "Service 3"],
+    "address": "Montana, Pretoria East",
+    "whatsapp": "27821234567",
+    "featured": false,
+    "images": []
+  },
+  {
+    "id": 3,
+    "name": "[Business Name]",
+    "category": "date-ideas",
+    "rating": 4.7,
+    "reviews": 74,
+    "googleReviewsUrl": "https://www.google.com/maps/place/...",
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "description": "[Short description of the business.]",
+    "services": ["Service 1", "Service 2", "Service 3"],
+    "address": "Woodlands, Pretoria East",
+    "whatsapp": "27821234567",
+    "featured": false,
+    "images": []
+  },
+  {
+    "id": 4,
+    "name": "[Business Name]",
+    "category": "things-to-do",
+    "rating": 4.5,
+    "reviews": 36,
+    "googleReviewsUrl": "https://www.google.com/maps/place/...",
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "description": "[Short description of the business.]",
+    "services": ["Service 1", "Service 2", "Service 3"],
+    "address": "Faerie Glen, Pretoria East",
+    "whatsapp": "27821234567",
+    "featured": false,
+    "images": []
+  }
+]
+

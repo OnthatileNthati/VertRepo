@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "[Event Name]",
+    "category": "live-music",
+    "venue": "[Venue Name, Pretoria East]",
+    "date": "2026-08-15T18:00:00",
+    "description": "[Short event description.]",
+    "featured": true,
+    "images": [],
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "ticketUrl": ""
+  },
+  {
+    "id": 2,
+    "title": "[Event Name]",
+    "category": "food-drink",
+    "venue": "[Venue Name, Pretoria East]",
+    "date": "2026-07-27T12:00:00",
+    "description": "[Short event description.]",
+    "featured": false,
+    "images": [],
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "ticketUrl": ""
+  },
+  {
+    "id": 3,
+    "title": "[Event Name]",
+    "category": "festivals",
+    "venue": "[Venue Name, Pretoria East]",
+    "date": "2026-09-05T10:00:00",
+    "description": "[Short event description.]",
+    "featured": false,
+    "images": [],
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "ticketUrl": ""
+  },
+  {
+    "id": 4,
+    "title": "[Event Name]",
+    "category": "sports-fitness",
+    "venue": "[Venue Name, Pretoria East]",
+    "date": "2026-07-28T07:00:00",
+    "description": "[Short event description.]",
+    "featured": false,
+    "images": [],
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "ticketUrl": ""
+  },
+  {
+    "id": 5,
+    "title": "[Event Name]",
+    "category": "arts-culture",
+    "venue": "[Venue Name, Pretoria East]",
+    "date": "2026-08-01T09:00:00",
+    "description": "[Short event description.]",
+    "featured": false,
+    "images": [],
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "ticketUrl": ""
+  },
+  {
+    "id": 6,
+    "title": "[Event Name]",
+    "category": "community",
+    "venue": "[Venue Name, Pretoria East]",
+    "date": "2026-08-10T14:00:00",
+    "description": "[Short event description.]",
+    "featured": false,
+    "images": [],
+    "mapsUrl": "https://maps.google.com/?q=...",
+    "ticketUrl": ""
+  }
+]
