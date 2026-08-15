@@ -1,97 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Your Business - VertRepo</title>
-    <link rel="stylesheet" href="style.css"/>
-    <meta name="description" content="List your business on VertRepo for free. Get discovered by customers in Pretoria East who can't find you on Google.">
-    <meta name="keywords" content="List my business Pretoria East, free business listing Pretoria, get found online Pretoria East">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="List Your Business Free - VertRepo">
-    <meta property="description" content="Get your business found by customers in Pretoria East. First month free.">
-    <meta property="og:url" content="www.vertrepo.co.za">
-    <meta property="og:type" content="website"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Your Business — VertGuide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    </head>
-    <body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="search.html">Directory</a>
+        <a href="events.html">Events</a>
+        <a href="#">Blog</a>
+      </nav>
+      <a href="claim.html" class="btn btn--cta nav__cta">List Your Business</a>
+      <button class="nav__burger" aria-label="Menu">☰</button>
+    </div>
+  </header>
 
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="index.html" class="logo">Vert<span>Repo</span></a>
-                <a href="claim.html" class="btn-nav">List Your Business</a>
-                </div>
-                </nav>
+  <!-- CLAIM HERO -->
+  <section class="claim-hero">
+    <div class="claim-hero__inner">
+      <p class="eyebrow">List Your Business</p>
+      <h1 class="claim-hero__title">Get found in <span class="hero__title-accent">Pretoria East</span></h1>
+      <p class="claim-hero__sub">Add your business to VertGuide and reach people searching your suburb right now.</p>
+    </div>
+  </section>
 
-                <section class="claim-hero">
-                    <div class="section-container">
-                        <div class="section-label">Free Listing</div>
-                        <h1 class="section-title">Get your business found</h1>
-                        <p class="section-sub">Join VertRepo and get discovered by customers in Pretoria East. First month free.</p>
-                        </div>
-                        </section>
-
-<section class="claim-form-section">
+  <!-- CLAIM FORM -->
+  <section class="claim-form-section">
     <div class="claim-container">
+      <form id="claimForm" action="https://formspree.io/f/mzepeerv" method="POST">
 
-        <div id="successMessage" style="display: none;" class="success-message">
-            <div class="success-icon">✅</div>
-            <h2>You're on the list!</h2>
-            <p>We'll review your submission and get your business live within 24hrs</p>
-            <a href="index.html" class="btn-nav">Back to home</a>
+        <div class="form-group">
+          <label for="businessName">Business Name</label>
+          <input type="text" id="businessName" name="businessName" placeholder="e.g. Bootlegger Coffee Company">
         </div>
 
-        <form id="claimForm" action="https://formspree.io/f/xeevyjlj" method="POST">
+        <div class="form-group">
+          <label for="businessCategory">Category</label>
+          <select id="businessCategory" name="businessCategory">
+            <option value="">Select a category</option>
+            <option value="restaurants">Restaurants</option>
+            <option value="things-to-do">Things To Do</option>
+            <option value="services">Services</option>
+            <option value="date-ideas">Date Ideas</option>
+          </select>
+        </div>
 
-                    <div class="form-group">
-                        <label for="businessName">Business Name *</label>
-                        <input type="text" id="businessName" placeholder="e.g ShinePro Detailing"/>
-                        </div>
+        <div class="form-group">
+          <label for="businessDesc">Description</label>
+          <textarea id="businessDesc" name="businessDesc" rows="4" placeholder="Tell people what you do and what makes you worth visiting."></textarea>
+        </div>
 
-                        <div class="form-group">
-                            <label for="businessCategory">Category *</label>
-                            <select id="businessCategory">
-                                <option>Select a category</option>
-                                <option value="restaurants">🍽️Restaurants</option>
-                                <option value="carwashes">🚗Carwashes</option>
-                                <option value="beauty">💄Beauty</option>
-                                <option value="auto">🔧Auto</option>
-                                <option value="services">🛠️Services</option>
-                            </select>
-                            </div>
+        <div class="form-group">
+          <label for="businessPhone">Phone Number</label>
+          <input type="tel" id="businessPhone" name="businessPhone" placeholder="e.g. 012 345 6789">
+        </div>
 
-                            <div class="form-group">
-                                <label for="businessDesc">Description *</label>
-                                <textarea id="businessDesc" name="businessDesc" rows="4" placeholder="Tell customers what makes your business special..."></textarea>
-                                </div>
+        <div class="form-group">
+          <label for="businessEmail">Email</label>
+          <input type="email" id="businessEmail" name="businessEmail" placeholder="e.g. info@yourbusiness.com">
+        </div>
 
-                                <div class="form-group">
-                                    <label for="businessPhone">Phone Number *</label>
-                                    <input type="tel" id="businessPhone" name="businessPhone"  placeholder="e.g. 012 345 6754"/>
-                                    </div>
+        <div class="form-group">
+          <label for="businessAddress">Address</label>
+          <input type="text" id="businessAddress" name="businessAddress" placeholder="e.g. Menlyn, Pretoria">
+        </div>
 
-                                    <div class="form-group">
-                                    <label for="businessWhatsapp">WhatsApp Number *</label>
-                                    <input type="tel" id="businessWhatsapp" name="businessWhatsapp" placeholder="e.g. 27123456754"/>
-                                    </div>
+        <div class="form-group">
+          <label for="photoUpload">Business Photo</label>
+          <input type="file" id="photoUpload" name="photoUpload" accept="image/*">
+          <img id="photoPreview" class="photo-preview" style="display:none;" alt="Photo preview">
+        </div>
 
-                                    <div class="form-group">
-                                    <label for="businessAddress">Address *</label>
-                                    <input type="tel" id="businessAddress" name="businessAddress" placeholder="e.g. 12 Main Street Garsfontein"/>
-                                    </div>
+        <button type="submit" class="btn-submit">Submit Listing</button>
 
-                                    <div class="form-group">
-                                    <label for="photoUpload">Business Photo *</label>
-                                    <input type="file" id="photoUpload" accept="image/*" >
-                                    <img id="photoPreveiw" style="display: none; margin-top: 12px; max-width: 100%; border-radius: 8px;">
-                                    </div>
+      </form>
+    </div>
+  </section>
 
-                                    <button type="submit" class="btn-submit">Submit Free Listing</button>
-                                    </form>
-                                    </section>
-<script src="claim.js"></Script>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <p class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></p>
+        <p>The Pretoria East business index. Built street by street.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="search.html">Directory</a>
+        <a href="events.html">Events</a>
+      </div>
+      <div class="footer__col">
+        <h4>For Businesses</h4>
+        <a href="claim.html">List Your Business</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="mailto:vertexrastudio@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 VertGuide. Pretoria East, South Africa 🇿🇦</div>
+  </footer>
+
+<script src="claim.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
-
-
-

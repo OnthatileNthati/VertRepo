@@ -1,75 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search - VertRepo</title>
-    <link rel="stylesheet" href="style.css"/>
-    <meta name="description" content="Search local businesses in Pretoria East. Find carwashes, restaurants, beauty salons, auto services and more hidden gems near you">
-    <meta name="keywords" content="search businesses Pretoria East, local services Pretoria East, find businesses near me Pretoria">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="search Businesses - VertRepo">
-    <meta property="og:description" content="Find hidden gem businesses in Pretoria East that Google never shows you.">
-    <meta property="og:url" content="www.vertrepo.co.za/search.html">
-    <meta property="og:type" content="website">
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="index.html" class="logo">Vert<span>Repo</span></a>
-                <a href="claim.html" class="btn-nav">List Your Business</a>
-                </div>
-                </nav>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browse Businesses — VertGuide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
 
-                
-<section class="search-page-hero">
-    <div class="section-container">
-        <div class="search-bar">
-            <div class="search-input-wrap">
-                <input type="text" id="searchInput" placeholder="Search businesses, services..."/>
-            </div>
-            <select id="categoryFilter" class="category-select">
-                                <option value="">All Categories</option>
-                                <option value="restaurants">🍽️Restaurants</option>
-                                <option value="carwashes">🚗Carwashes</option>
-                                <option value="beauty">💄Beauty</option>
-                                <option value="auto">🔧Auto</option>
-                                <option value="services">🛠️Services</option>
-                            </select>
-                     </div>
-                </div>
-</section>
-
-
-
-<section class="search-results">
-    <div class="section-container">
-        <div class="section-label" id="resultsLabel">All businesses</div>
-        <div class="listings-grid" id="resultsGrid">
-            <div class="loading">Loading businesses...</div>
-        </div>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="search.html" class="is-active">Directory</a>
+        <a href="events.html">Events</a>
+      </nav>
+      <a href="claim.html" class="btn btn--cta nav__cta">List Your Business</a>
+      <button class="nav__burger" aria-label="Menu">☰</button>
     </div>
- </section>
+  </header>
 
- <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-brand">
-            <a href="index.html" class="logo">Vert<span>Repo</span></a>
-            <p>Connecting Pretoria East with the businessses that deserve to be found.</p>
+  <!-- SEARCH HERO -->
+  <section class="search-hero">
+    <div class="search-hero__inner">
+      <p class="eyebrow">Home / Directory</p>
+      <h1 class="search-hero__title">Browse the <span class="hero__title-accent">directory</span></h1>
+      <p class="search-hero__sub">Find trusted businesses and things to do across Pretoria East.</p>
+
+      <form class="search" id="searchPageForm">
+        <input type="text" placeholder="Search businesses…" class="search__input" id="searchInput">
+        <select class="search__suburb" id="categoryFilter">
+          <option value="">All categories</option>
+          <option value="restaurants">Restaurants</option>
+          <option value="things-to-do">Things To Do</option>
+          <option value="services">Services</option>
+          <option value="date-ideas">Date Ideas</option>
+        </select>
+        <button type="submit" class="btn btn--cta search__btn" id="searchBTN">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FILTER CHIPS -->
+  <section class="filter-bar">
+    <div class="filter-bar__inner">
+      <button class="chip chip--filter is-active" data-cat="">All</button>
+      <button class="chip chip--filter" data-cat="restaurants">Restaurants</button>
+      <button class="chip chip--filter" data-cat="things-to-do">Things To Do</button>
+      <button class="chip chip--filter" data-cat="services">Services</button>
+      <button class="chip chip--filter" data-cat="date-ideas">Date Ideas</button>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="section results">
+    <div class="results__layout">
+
+      <div class="results__main">
+        <div class="results__head">
+          <p class="results__count" id="resultsCount">Showing 0 results</p>
         </div>
 
-        <div class="footer-links">
-            <a href="claim.html">List Your Business</a>
-            <a href="search.html">Browse All</a>
-            <a href="mailto:vertexrastudio@gmail.com">Contact</a>
+        <div class="results-grid" id="resultsGrid">
+          <!-- JS populates business cards here -->
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2025 VertRepo - A Vertexra Studio product</p>
-            </div>
-            </div>
-            </footer>
+        <p class="empty-state" id="emptyState" style="display:none;">No businesses found. Try a different search or category.</p>
+      </div>
 
-            <script src="search.js"></script>
-            </body>
-            </html>
+      <aside class="results__side">
+        <div class="side-card">
+          <h4>Browse by category</h4>
+          <ul class="side-list" id="categoryBreakdown">
+            <!-- JS populates counts here -->
+          </ul>
+        </div>
+
+        <div class="side-card side-card--dark">
+          <h4>Own a business?</h4>
+          <p>Get listed on VertGuide and reach people searching Pretoria East right now.</p>
+          <a href="claim.html" class="btn btn--cta">List Your Business →</a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <p class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></p>
+        <p>The Pretoria East business index. Built street by street.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="search.html">Directory</a>
+        <a href="events.html">Events</a>
+      </div>
+      <div class="footer__col">
+        <h4>For Businesses</h4>
+        <a href="claim.html">List Your Business</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="mailto:vertexrastudio@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 VertGuide. Pretoria East, South Africa</div>
+  </footer>
+
+<script src="search.js"></script>
+</body>
+</html>

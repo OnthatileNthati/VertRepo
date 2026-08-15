@@ -30,6 +30,7 @@ async function init() {
     }
 
     document.title = business.name + ' — VertGuide';
+    injectSchema(business);
 
     let coverHTML = '';
     if (business.images && business.images.length > 0) {
@@ -74,5 +75,37 @@ async function init() {
     document.getElementById('listingContent').innerHTML = '<div class="empty-state"><p>Something went wrong loading this listing.</p></div>';
   }
 }
+
+function injectSchema(business) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": business.name,
+    "description": business.description,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": business.address,
+      "addressLocality": "Pretoria East",
+      "addressCountry": "ZA"
+    },
+    "aggregateRating": business.reviews > 0 ? {
+      "@type": "AggregateRating",
+      "ratingValue": business.rating,
+      "reviewCount": business.reviews
+    } : undefined,
+    "url": window.location.href
+  };
+
+  if (business.whatsapp) {
+    schema.telephone = "+" + business.whatsapp;
+  }
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
+}
+
+
 
 window.addEventListener('DOMContentLoaded', init);

@@ -1,3 +1,10 @@
+const burger = document.querySelector('.nav__burger');
+if (burger) {
+  burger.addEventListener('click', () => {
+    document.querySelector('.nav').classList.toggle('nav--open');
+  });
+}
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // ===== PHOTO PREVIEW =====
@@ -21,19 +28,24 @@ window.addEventListener('DOMContentLoaded', () => {
   // ===== FORM VALIDATION =====
   const form = document.getElementById('claimForm');
 
-  form.addEventListener('submit', (e) => {
-    const name = document.getElementById('businessName').value.trim();
-    const category = document.getElementById('businessCategory').value;
-    const description = document.getElementById('businessDesc').value.trim();
-    const phone = document.getElementById('businessPhone').value.trim();
-    const address = document.getElementById('businessAddress').value.trim();
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      const name = document.getElementById('businessName').value.trim();
+      const category = document.getElementById('businessCategory').value;
+      const description = document.getElementById('businessDesc').value.trim();
+      const phone = document.getElementById('businessPhone').value.trim();
+      const address = document.getElementById('businessAddress').value.trim();
 
-    if (!name || !category || !description || !phone || !address) {
-      e.preventDefault();
-      showError('Please fill in all required fields.');
-      return;
-    }
-  });
+      if (!name || !category || !description || !phone || !address) {
+        e.preventDefault();
+        showError('Please fill in all required fields.');
+        return;
+      }
+
+      const existing = document.getElementById('formError');
+      if (existing) existing.remove();
+    });
+  }
 });
 
 // ===== ERROR HELPER =====
@@ -47,6 +59,5 @@ function showError(msg) {
   error.textContent = msg;
 
   const form = document.getElementById('claimForm');
-  form.prepend(error);
+  if (form) form.prepend(error);
 }
-

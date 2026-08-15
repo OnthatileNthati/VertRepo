@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VertRepo | Find local Businesses, Plumbers, Electricians & Services in Pretoria</title>
+    <title>VertGuide — Pretoria East Business Directory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -17,128 +17,166 @@
     <meta property="og:type" content="website">
     <meta name="google-site-verification" content="-y52Qq4tN0eNffj_WEIb9CdenbeLeBwOaRGr3sfz8BQ" />
 </head>
-<body>
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">Vert<span>Repo</span></a>
-            <a href="claim.html" class="btn-nav">List Your Business</a>
-        </div>
-        </nav>
-    
-<section class="hero" id="hero">
-    <div class="hero-container">
-        <div class="hero-badge">📍Pretoria East</div>
-        <h1 class="hero-headline">
-            Discover the <span class="accent">Local businesses</span> and services near you
-        </h1>
-        
-        <p class="hero-sub">
-            Find trusted local businesses, plumbers, electricians, landscapers, restaurants and more. Discover Reliable Services across Pretoria and Gauteng
-        </p>
-
-        <div class="search-bar">
-            <div class="search-input-wrap">
-                <input type="text" id="searchInput" placeholder="Search businesses, services..."/>
-            </div>
-            <select id="categoryFilter" class="category-select">
-                <option value="">All categories</option>
-                <option value="restaurants">🍽️Restaurants</option>
-                <option value="carwashes">🚗Car Washes</option>
-                <option value="Beauty">💄Beauty</option>
-                <option value="auto">🔧Auto</option>
-                <option value="services">💼Services</option>
-            </select>
-            <button class="btn-search" id="searchBTN">Search</button>
-            </div>
-
-            </div>
-            </section>
-                
-<section class="categories" id="categories">
-    <div class="section-container">
-        <div class="section-label">Browse by category</div>
-        <h2 class="section-title">What are you looking for?</h2>
-        <div class="categories-grid">
-
-            <a href="search.html?cat=restaurants" class="category-card">
-                <div class="cat-icon">🍽️</div>
-                <div class="cat-name">Restaurants</div>
-                <div class="cat-count">0 Listings</div>
-            </a>
-
-            <a href="search.html?cat=carwashes" class="category-card">
-                <div class="cat-icon">🚗</div>
-                <div class="cat-name">Car Washes</div>
-                <div class="cat-count">0 Listings</div>
-            </a>
-
-            <a href="search.html?cat=beauty" class="category-card">
-                <div class="cat-icon">💄</div>
-                <div class="cat-name">Beauty</div>
-                <div class="cat-count">0 Listings</div>
-            </a>
-
-            <a href="search.html?cat=auto" class="category-card">
-                <div class="cat-icon">🔧</div>
-                <div class="cat-name">Automotive</div>
-                <div class="cat-count">0 Listings</div>
-            </a>
-
-            <a href="search.html?cat=services" class="category-card">
-                <div class="cat-icon">💼</div>
-                <div class="cat-name">Services</div>
-                <div class="cat-count">0 Listings</div>
-            </a>
-
-        </div>
+ <!-- NAV -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></a>
+      <nav class="nav__links">
+        <a href="#" class="is-active">Home</a>
+        <a href="#">Directory</a>
+        <a href="#">Suburbs</a>
+        <a href="#">Things To Do</a>
+      </nav>
+      <a href="claim.html" class="btn btn--cta nav__cta">List Your Business</a>
+      <button class="nav__burger" aria-label="Menu">☰</button>
     </div>
-</section>
+  </header>
 
-<section class="featured" id="featured">
-    <div class="section-container">
-        <div class="section-label">Top Picks</div>
-        <h2 class="section-title">Featured Businesses</h2>
-        <p class="section-sub">Highly rated locals that deserve more love.</p>
-        <div class="listings-grid" id="listingsGrid">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__grid"></div>
+    <div class="hero__inner">
+      <p class="eyebrow"> Pretoria East · 003, 0181, 0157</p>
+      <h1 class="hero__title">
+        The wiring for <span class="hero__title-accent">Pretoria East</span> business, mapped by street.
+      </h1>
+      <p class="hero__sub">Discover Pretoria in One Search</p>
+
+      <form class="search" id="heroSearchForm">
+        <input type="text" placeholder="Things to do, restaurants, date ideas..." class="search__input" id="searchInput">
+        <select class="search__suburb" id="categoryFilter">
+          <option value="">All categories</option>
+          <option value="restaurants">Things to Do</option>
+          <option value="carwashes">Date Ideas</option>
+          <option value="beauty">Restaurants</option>
+          <option value="auto">Businesses</option>
+          <option value="services">Services</option>
+        </select>
+        <button type="submit" class="btn btn--cta search__btn" id="searchBTN">Search</button>
+      </form>
+
+      <div class="chips">
+        <a href="search.html?cat=restaurants" class="chip">Things to Do</a>
+        <a href="search.html?cat=date-ideas" class="chip">Date Ideas</a>
+        <a href="search.html?cat=restaurants" class="chip">Restaurants</a>
+        <a href="search.html?cat=businesses" class="chip">Businesses</a>
+        <a href="search.html?cat=services" class="chip">Local Services</a>
+        <a href="events.html?cat=events" class="chip">Events</a>
+      </div>
     </div>
+  </section>
+
+  <!-- CATEGORY INDEX -->
+  <section class="section">
+    <div class="section__head">
+      <p class="eyebrow">Index</p>
+      <h2 class="section__title">What are you looking for?</h2>
+      <a href="search.html" class="section__link">All categories →</a>
     </div>
-</section>
 
-            
-                            
-<section class="about-vertrepo">
-    <div class="section-container">
-        <h2>Find Trusted Local Businesses in Pretoria and Gauteng</h2>
-        
-        <p>VertRepo helps people discover trusted local businesses and service providers across Pretoria and Gauteng. Browse plumbers, electricians, landscapers, renovation specialists, beauty services, restaurants and more.
-        </p>
+    <div class="index-rail">
+      <a href="search.html?cat=restaurants" class="index-card">
+        <span class="index-card__tab">A</span>
+        <h3>Restaurants</h3>
+        <p>Cafés, takeaways, fine dining</p>
+        <span class="index-card__count">0 listings</span>
+      </a>
+      <a href="search.html?cat=services" class="index-card">
+        <span class="index-card__tab">B</span>
+        <h3>Local Services</h3>
+        <p>Electricians, plumbers, handymen, Automotive</p>
+        <span class="index-card__count">0 listings</span>
+      </a>
+      <a href="search.html?cat=date-ideas" class="index-card">
+        <span class="index-card__tab">C</span>
+        <h3>Date Ideas</h3>
+        <p>Arts and craft, fine dinning, picnic spots</p>
+        <span class="index-card__count">0 listings</span>
+      </a>
+      <a href="search.html?cat=things-to-do" class="index-card">
+        <span class="index-card__tab">D</span>
+        <h3>Things To Do</h3>
+        <p>Fun activities to do when you're in Pretoria East</p>
+        <span class="index-card__count">0 listings</span>
+      </a>
 
-        <h2>Why Use VertRepo?</h2>
-
-        <p>
-        We help connect local communities with reliable businesses that deserve to be found. Every listing includes business details, services offered and direct contact information.
-        </p>    
-            
+      <a href="events.html" class="index-card">
+  <span class="index-card__tab">E</span>
+  <h3>Events</h3>
+  <p>Upcoming events in Pretoria East from live music to art exhibitions. Find them here!</p>
+  <span class="index-card__count">Browse events →</span>
+</a>
+      
     </div>
-</section>
-                    
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-brand">
-            <a href="index.html" class="logo">Vert<span>Repo</span></a>
-            <p>Connecting Pretoria East with the businesses that deserve to be found</p>
-        </div>
-        <div class="footer-links">
-            <a href="claim.html">List Your Business</a>
-            <a href="search.html">Browse All</a>
-            <a href="mailto:vertexrastudio@gmail.com">Contact</a>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 VertRepo - A Vertexra Studio product</p>
-        </div>
-    </div>
-    </footer>
+  </section>
 
-<script src="script.js"></script>
+  <!-- FEATURED LISTINGS -->
+  <section class="section section--tint">
+    <div class="section__head">
+      <p class="eyebrow">Featured</p>
+      <h2 class="section__title">Top rated this week</h2>
+      <a href="search.html" class="section__link">View all →</a>
+    </div>
+
+    <div class="listing-grid" id="listingsGrid">
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section">
+    <div class="why">
+      <div class="why__copy">
+        <p class="eyebrow">Why Use VertGuide</p>
+        <h2 class="section__title">Discover Pretoria in One Search</h2>
+        <p>Search restaurants, services, and local favourites by suburb making it easier to find what you need.</p>
+        <a href="#" class="btn btn--ghost">Learn more</a>
+      </div>
+      <ul class="why__stats">
+        <li><span class="mono">01</span> Verified listings</li>
+        <li><span class="mono">02</span> Real reviews</li>
+        <li><span class="mono">03</span> Suburb-first search</li>
+        <li><span class="mono">04</span> Built in Pretoria</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <div>
+        <h2>Own a business in Pretoria East?</h2>
+        <p>Get listed and reach people searching your suburb right now.</p>
+      </div>
+      <a href="claim.html" class="btn btn--cta">List Your Business →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <p class="nav__logo">VertGuide<span class="nav__logo-dot">.</span></p>
+        <p>The Pretoria East business index. Built street by street.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="search.html">Directory</a>
+        <a href="search.html">Categories</a>
+      </div>
+      <div class="footer__col">
+        <h4>For Businesses</h4>
+        <a href="claim.html">List Your Business</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="mailto:vertexrastudio@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 VertGuide. Pretoria East, South Africa</div>
+  </footer>
+
+ <script src="script.js"></script>
+ <script>lucide.createIcons();</script>
+
 </body>
 </html>

@@ -38,7 +38,7 @@
   <!-- CLAIM FORM -->
   <section class="claim-form-section">
     <div class="claim-container">
-      <form id="claimForm">
+      <form id="claimForm" action="https://formspree.io/f/mzepeerv" method="POST">
 
         <div class="form-group">
           <label for="businessName">Business Name</label>
@@ -64,6 +64,11 @@
         <div class="form-group">
           <label for="businessPhone">Phone Number</label>
           <input type="tel" id="businessPhone" name="businessPhone" placeholder="e.g. 012 345 6789">
+        </div>
+
+        <div class="form-group">
+          <label for="businessEmail">Email</label>
+          <input type="email" id="businessEmail" name="businessEmail" placeholder="e.g. info@yourbusiness.com">
         </div>
 
         <div class="form-group">
@@ -107,7 +112,7 @@
     <div class="footer__bottom">© 2026 VertGuide. Pretoria East, South Africa 🇿🇦</div>
   </footer>
 
-<script src="js/claim.js"></script>
+<script src="../js/claim.js"></script>
 <script>lucide.createIcons();</script>
 </body>
 </html>
