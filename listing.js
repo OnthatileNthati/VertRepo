@@ -60,15 +60,33 @@ async function init() {
         '</div>' +
         '<div class="listing-section"><h2>About</h2><p>' + business.description + '</p></div>' +
         '<div class="listing-section"><h2>Services</h2><div class="services-list">' + servicesHTML + '</div></div>' +
-        '<div class="listing-actions">' +
-          (business.whatsapp ? '<a href="https://wa.me/' + business.whatsapp + '" target="_blank" class="btn-whatsapp"><i data-lucide="message-circle"></i> WhatsApp</a>' : '') +
-          (business.mapsUrl ? '<a href="' + business.mapsUrl + '" target="_blank" class="btn-claim"><i data-lucide="map-pin"></i> Get Directions</a>' : '') +
-          (business.googleReviewsUrl ? '<a href="' + business.googleReviewsUrl + '" target="_blank" class="btn-claim"><i data-lucide="external-link"></i> Read Reviews</a>' : '') +
-          '<a href="claim.html" class="btn-claim">Claim this listing</a>' +
-        '</div>' +
+'<div class="listing-actions">' +
+  (business.whatsapp ? '<a href="https://wa.me/' + business.whatsapp + '" target="_blank" class="btn-whatsapp"><i data-lucide="message-circle"></i> WhatsApp</a>' : '') +
+  (business.mapsUrl ? '<a href="' + business.mapsUrl + '" target="_blank" class="btn-claim"><i data-lucide="map-pin"></i> Get Directions</a>' : '') +
+  (business.googleReviewsUrl ? '<a href="' + business.googleReviewsUrl + '" target="_blank" class="btn-claim"><i data-lucide="external-link"></i> Read Reviews</a>' : '') +
+  '<a href="claim.html" class="btn-claim">Claim this listing</a>' +
+  '<button type="button" class="btn-claim" id="shareBtn"><i data-lucide="share-2"></i> Share</button>' +
+      '</div>' +
       '</div>';
 
     if (window.lucide) lucide.createIcons();
+
+    const shareBtn = document.getElementById('shareBtn');
+if (shareBtn) {
+  shareBtn.addEventListener('click', function() {
+    const shareData = {
+      title: business.name + ' — VertGuide',
+      text: business.description,
+      url: window.location.href
+    };
+    if (navigator.share) {
+      navigator.share(shareData).catch(function(){});
+    } else {
+      navigator.clipboard.writeText(window.location.href);
+      alert('Link copied to clipboard!');
+    }
+  });
+}
 
   } catch (err) {
     console.error('Failed to load listing:', err);
